@@ -1,0 +1,18 @@
+
+[Type]
+SCREEN
+[date]
+10/06/02
+[time]
+15:04
+Name=Mux 8 screens
+Ascans#=8
+(board:channel) list
+2:1
+2:2
+2:3
+2:4
+2:5
+2:6
+2:7
+2:8

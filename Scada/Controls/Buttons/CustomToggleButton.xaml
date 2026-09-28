@@ -1,0 +1,16 @@
+﻿<UserControl
+    x:Class="TimetTankSix.Controls.CustomToggleButton"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:TimetTankSix.Controls"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    d:DesignHeight="450"
+    d:DesignWidth="800"
+    mc:Ignorable="d">
+    <Button
+        x:Name="ToggleBtn"
+        Click="OnBtnClick"
+        Content="{Binding ButtonText, RelativeSource={RelativeSource AncestorType=UserControl}}"
+        Style="{StaticResource CustomToggleButtonStyle}" />
+</UserControl>

@@ -1,0 +1,575 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 9">
+<meta name=Originator content="Microsoft Word 9">
+<link rel=File-List href="Tank%20application%20(step%201)_filelist.xml">
+<title>…</title>
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>Alain</o:Author>
+  <o:Template>Normal</o:Template>
+  <o:LastAuthor>Alain</o:LastAuthor>
+  <o:Revision>5</o:Revision>
+  <o:TotalTime>12</o:TotalTime>
+  <o:Created>2002-09-19T14:00:00Z</o:Created>
+  <o:LastSaved>2002-10-17T08:31:00Z</o:LastSaved>
+  <o:Pages>2</o:Pages>
+  <o:Words>400</o:Words>
+  <o:Characters>2282</o:Characters>
+  <o:Company>Socomate</o:Company>
+  <o:Lines>19</o:Lines>
+  <o:Paragraphs>4</o:Paragraphs>
+  <o:CharactersWithSpaces>2802</o:CharactersWithSpaces>
+  <o:Version>9.3821</o:Version>
+ </o:DocumentProperties>
+ <o:OfficeDocumentSettings>
+  <o:DoNotOrganizeInFolder/>
+ </o:OfficeDocumentSettings>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:HyphenationZone>21</w:HyphenationZone>
+ </w:WordDocument>
+</xml><![endif]-->
+<style>
+<!--
+ /* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	color:windowtext;
+	mso-ansi-language:EN-US;}
+p
+	{margin-right:0cm;
+	mso-margin-top-alt:auto;
+	mso-margin-bottom-alt:auto;
+	margin-left:0cm;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	color:black;
+	mso-ansi-language:EN-US;}
+@page Section1
+	{size:595.3pt 841.9pt;
+	margin:70.85pt 70.85pt 70.85pt 70.85pt;
+	mso-header-margin:35.4pt;
+	mso-footer-margin:35.4pt;
+	mso-paper-source:0;}
+div.Section1
+	{page:Section1;}
+-->
+</style>
+<!--[if gte mso 9]><xml>
+ <o:shapedefaults v:ext="edit" spidmax="1027">
+  <o:colormenu v:ext="edit" fillcolor="#333"/>
+ </o:shapedefaults></xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="1"/>
+ </o:shapelayout></xml><![endif]-->
+</head>
+
+<body bgcolor="#333333" lang=FR style='tab-interval:35.4pt'>
+
+<div class=Section1>
+
+<p style='margin:0cm;margin-bottom:.0001pt'><span lang=EN-US style='font-size:
+8.0pt;mso-bidi-font-size:10.0pt;font-family:Arial;color:white'>Update 17
+October 2002<o:p></o:p></span></p>
+
+<p style='margin:0cm;margin-bottom:.0001pt'><b><u><span lang=EN-US
+style='font-size:16.0pt;mso-bidi-font-size:10.0pt;font-family:Arial;color:white'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></u></b></p>
+
+<p style='margin:0cm;margin-bottom:.0001pt'><b><u><span lang=EN-US
+style='font-size:16.0pt;mso-bidi-font-size:10.0pt;font-family:Arial;color:white'>TANK
+APPLICATION – STEP 1<o:p></o:p></span></u></b></p>
+
+<p style='margin:0cm;margin-bottom:.0001pt'><b><span lang=EN-US
+style='font-size:8.0pt;mso-bidi-font-size:10.0pt;font-family:Arial;color:white'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></b></p>
+
+<p style='margin:0cm;margin-bottom:.0001pt'><b><span lang=EN-US
+style='font-size:8.0pt;mso-bidi-font-size:10.0pt;font-family:Arial;color:white'>…<o:p></o:p></span></b></p>
+
+<p style='margin:0cm;margin-bottom:.0001pt'><b><span lang=EN-US
+style='font-size:8.0pt;mso-bidi-font-size:10.0pt;font-family:Arial;color:white'>Error=PCXUS_Open(&amp;hUSPC,1)&nbsp;;<o:p></o:p></span></b></p>
+
+<p style='margin:0cm;margin-bottom:.0001pt'><b><span lang=EN-US
+style='font-size:8.0pt;mso-bidi-font-size:10.0pt;font-family:Arial;color:white'>if(Error)<o:p></o:p></span></b></p>
+
+<p style='margin:0cm;margin-bottom:.0001pt'><b><span lang=EN-US
+style='font-size:8.0pt;mso-bidi-font-size:10.0pt;font-family:Arial;color:white'>{<o:p></o:p></span></b></p>
+
+<p style='margin:0cm;margin-bottom:.0001pt'><b><span lang=EN-US
+style='font-size:8.0pt;mso-bidi-font-size:10.0pt;font-family:Arial;color:white'><span
+style='mso-tab-count:1'>                </span>MessageBox(NULL,&nbsp;“&nbsp;Open
+error&nbsp;“,&nbsp;“&nbsp;Error&nbsp;“,MB_OK)&nbsp;;<o:p></o:p></span></b></p>
+
+<p style='margin:0cm;margin-bottom:.0001pt'><b><span lang=EN-US
+style='font-size:8.0pt;mso-bidi-font-size:10.0pt;font-family:Arial;color:white'><span
+style='mso-tab-count:1'>                </span>Return 0&nbsp;;<o:p></o:p></span></b></p>
+
+<p style='margin:0cm;margin-bottom:.0001pt'><b><span lang=EN-US
+style='font-size:8.0pt;mso-bidi-font-size:10.0pt;font-family:Arial;color:white'>}<o:p></o:p></span></b></p>
+
+<p style='margin:0cm;margin-bottom:.0001pt'><b><span lang=EN-US
+style='font-size:8.0pt;mso-bidi-font-size:10.0pt;font-family:Arial;color:white'>….<o:p></o:p></span></b></p>
+
+<p style='margin:0cm;margin-bottom:.0001pt'><b><span lang=EN-US
+style='font-size:8.0pt;mso-bidi-font-size:10.0pt;font-family:Arial;color:white'>….<o:p></o:p></span></b></p>
+
+<p style='margin:0cm;margin-bottom:.0001pt'><b><span lang=EN-US
+style='font-size:8.0pt;mso-bidi-font-size:10.0pt;font-family:Arial;color:white'>Error=PCXUS_Load(-1,-1,&nbsp;uspc_file)&nbsp;;<o:p></o:p></span></b></p>
+
+<p style='margin:0cm;margin-bottom:.0001pt'><b><span lang=EN-US
+style='font-size:8.0pt;mso-bidi-font-size:10.0pt;font-family:Arial;color:white'>if(Error)<o:p></o:p></span></b></p>
+
+<p style='margin:0cm;margin-bottom:.0001pt'><b><span lang=EN-US
+style='font-size:8.0pt;mso-bidi-font-size:10.0pt;font-family:Arial;color:white'>{<o:p></o:p></span></b></p>
+
+<p style='margin:0cm;margin-bottom:.0001pt'><b><span lang=EN-US
+style='font-size:8.0pt;mso-bidi-font-size:10.0pt;font-family:Arial;color:white'><span
+style='mso-tab-count:1'>                </span>MessageBox(NULL,&nbsp;“&nbsp;Load
+error&nbsp;“,&nbsp;“&nbsp;Error&nbsp;“,MB_OK)&nbsp;;<o:p></o:p></span></b></p>
+
+<p style='margin:0cm;margin-bottom:.0001pt'><b><span lang=EN-US
+style='font-size:8.0pt;mso-bidi-font-size:10.0pt;font-family:Arial;color:white'><span
+style='mso-tab-count:1'>                </span>Return 0&nbsp;;<o:p></o:p></span></b></p>
+
+<p style='margin:0cm;margin-bottom:.0001pt'><b><span lang=EN-US
+style='font-size:8.0pt;mso-bidi-font-size:10.0pt;font-family:Arial;color:white'>}<o:p></o:p></span></b></p>
+
+<p style='margin:0cm;margin-bottom:.0001pt'><b><span lang=EN-US
+style='font-size:8.0pt;mso-bidi-font-size:10.0pt;font-family:Arial;color:white'>….<o:p></o:p></span></b></p>
+
+<p style='margin:0cm;margin-bottom:.0001pt'><b><span lang=EN-US
+style='font-size:8.0pt;mso-bidi-font-size:10.0pt;font-family:Arial;color:white'>….<o:p></o:p></span></b></p>
+
+<p style='margin:0cm;margin-bottom:.0001pt'><b><span lang=EN-US
+style='font-size:8.0pt;mso-bidi-font-size:10.0pt;font-family:Arial;color:white'>Mode=1&nbsp;;
+// Trigger Externe <o:p></o:p></span></b></p>
+
+<p style='margin:0cm;margin-bottom:.0001pt'><b><span lang=EN-US
+style='font-size:8.0pt;mso-bidi-font-size:10.0pt;font-family:Arial;color:white'>Error=PCXUS_WRITE(hUSPC,
+0, 0, 0,&nbsp;«&nbsp;pulser_mode&nbsp;», &amp;Mode, NULL,NULL,NULL,
+&amp;Clip)&nbsp;;<o:p></o:p></span></b></p>
+
+<p style='margin:0cm;margin-bottom:.0001pt'><b><span lang=EN-US
+style='font-size:8.0pt;mso-bidi-font-size:10.0pt;font-family:Arial;color:white'>if(Error)<o:p></o:p></span></b></p>
+
+<p style='margin:0cm;margin-bottom:.0001pt'><b><span lang=EN-US
+style='font-size:8.0pt;mso-bidi-font-size:10.0pt;font-family:Arial;color:white'>{<o:p></o:p></span></b></p>
+
+<p style='margin:0cm;margin-bottom:.0001pt'><b><span lang=EN-US
+style='font-size:8.0pt;mso-bidi-font-size:10.0pt;font-family:Arial;color:white'><span
+style='mso-tab-count:1'>                </span>MessageBox(NULL,&nbsp;“&nbsp;Write
+error&nbsp;“,&nbsp;“&nbsp;Error&nbsp;“,MB_OK)&nbsp;;<o:p></o:p></span></b></p>
+
+<p style='margin:0cm;margin-bottom:.0001pt'><b><span lang=EN-US
+style='font-size:8.0pt;mso-bidi-font-size:10.0pt;font-family:Arial;color:white'><span
+style='mso-tab-count:1'>                </span>Return 0&nbsp;;<o:p></o:p></span></b></p>
+
+<p style='margin:0cm;margin-bottom:.0001pt'><b><span lang=EN-US
+style='font-size:8.0pt;mso-bidi-font-size:10.0pt;font-family:Arial;color:white'>}<o:p></o:p></span></b></p>
+
+<p style='margin:0cm;margin-bottom:.0001pt'><b><span lang=EN-US
+style='font-size:8.0pt;mso-bidi-font-size:10.0pt;font-family:Arial;color:white'>//
+Move to start point<o:p></o:p></span></b></p>
+
+<p style='margin:0cm;margin-bottom:.0001pt'><b><span style='font-size:8.0pt;
+mso-bidi-font-size:10.0pt;font-family:Arial;color:white;mso-ansi-language:FR'>….<o:p></o:p></span></b></p>
+
+<p style='margin:0cm;margin-bottom:.0001pt'><b><span style='font-size:8.0pt;
+mso-bidi-font-size:10.0pt;font-family:Arial;color:white;mso-ansi-language:FR'>….<o:p></o:p></span></b></p>
+
+<p style='margin:0cm;margin-bottom:.0001pt'><b><span style='font-size:8.0pt;
+mso-bidi-font-size:10.0pt;font-family:Arial;color:white;mso-ansi-language:FR'>//
+Enter control area information<o:p></o:p></span></b></p>
+
+<p style='margin:0cm;margin-bottom:.0001pt'><b><span style='font-size:8.0pt;
+mso-bidi-font-size:10.0pt;font-family:Arial;color:white;mso-ansi-language:FR'>…<o:p></o:p></span></b></p>
+
+<p style='margin:0cm;margin-bottom:.0001pt'><b><span style='font-size:8.0pt;
+mso-bidi-font-size:10.0pt;font-family:Arial;color:white;mso-ansi-language:FR'>…<o:p></o:p></span></b></p>
+
+<p style='margin:0cm;margin-bottom:.0001pt'><b><span style='font-size:8.0pt;
+mso-bidi-font-size:10.0pt;font-family:Arial;color:white;mso-ansi-language:FR'>//Acquisition
+configuration mode C-scan<o:p></o:p></span></b></p>
+
+<p style='margin:0cm;margin-bottom:.0001pt'><b><span lang=EN-US
+style='font-size:8.0pt;mso-bidi-font-size:10.0pt;font-family:Arial;color:white'>Acq_mode=0x800&nbsp;;
+<span style='mso-tab-count:3'>                                            </span>//select
+C-scan data<o:p></o:p></span></b></p>
+
+<p style='margin:0cm;margin-bottom:.0001pt'><b><span lang=EN-US
+style='font-size:8.0pt;mso-bidi-font-size:10.0pt;font-family:Arial;color:white'>Start_mode=0&nbsp;;<span
+style='mso-tab-count:4'>                                                   </span>//start
+without condition immediately after calling PCXUS_ACQ_START function <o:p></o:p></span></b></p>
+
+<p style='margin:0cm;margin-bottom:.0001pt'><b><span lang=EN-US
+style='font-size:8.0pt;mso-bidi-font-size:10.0pt;font-family:Arial;color:white'>for(i=0&nbsp;;i&lt;8&nbsp;;i++)AcqCondition[i]=0&nbsp;;
+<span style='mso-tab-count:1'>                </span>//acquisition without
+condition<o:p></o:p></span></b></p>
+
+<p style='margin:0cm;margin-bottom:.0001pt'><b><span lang=EN-US
+style='font-size:8.0pt;mso-bidi-font-size:10.0pt;font-family:Arial;color:white'>PrePostScans=0;<span
+style='mso-tab-count:4'>                                                </span>//not
+used<o:p></o:p></span></b></p>
+
+<p style='margin:0cm;margin-bottom:.0001pt'><b><span lang=EN-US
+style='font-size:8.0pt;mso-bidi-font-size:10.0pt;font-family:Arial;color:white'>Divider=0;<span
+style='mso-tab-count:4'>                                                             </span>//not
+used<o:p></o:p></span></b></p>
+
+<p style='margin:0cm;margin-bottom:.0001pt'><b><span lang=EN-US
+style='font-size:8.0pt;mso-bidi-font-size:10.0pt;font-family:Arial;color:white'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></b></p>
+
+<p style='margin:0cm;margin-bottom:.0001pt'><b><span lang=EN-US
+style='font-size:8.0pt;mso-bidi-font-size:10.0pt;font-family:Arial;color:white'>BufferSize=ScanLenght/AcqStep&nbsp;;<span
+style='mso-tab-count:2'>                 </span>//calculate the buffer size<o:p></o:p></span></b></p>
+
+<p style='margin:0cm;margin-bottom:.0001pt'><b><span lang=EN-US
+style='font-size:8.0pt;mso-bidi-font-size:10.0pt;font-family:Arial;color:white'>InterruptFluidity
+=BufferSize;<span style='mso-tab-count:2'>                          </span>//We
+explain this parameter at the next step<o:p></o:p></span></b></p>
+
+<p style='margin:0cm;margin-bottom:.0001pt'><b><span lang=EN-US
+style='font-size:8.0pt;mso-bidi-font-size:10.0pt;font-family:Arial;color:white'>Error=PCXUS_ACQ_CONFIG(hUSPC,Board,Acq_mode,Start_mode,AcqCondition,PrePostScans,Divider,BufferSize,InterruptFluidity,
+NULL)&nbsp;;<o:p></o:p></span></b></p>
+
+<p style='margin:0cm;margin-bottom:.0001pt'><b><span lang=EN-US
+style='font-size:8.0pt;mso-bidi-font-size:10.0pt;font-family:Arial;color:white'>if(Error)<o:p></o:p></span></b></p>
+
+<p style='margin:0cm;margin-bottom:.0001pt'><b><span lang=EN-US
+style='font-size:8.0pt;mso-bidi-font-size:10.0pt;font-family:Arial;color:white'>{<o:p></o:p></span></b></p>
+
+<p style='margin:0cm;margin-bottom:.0001pt'><b><span lang=EN-US
+style='font-size:8.0pt;mso-bidi-font-size:10.0pt;font-family:Arial;color:white'><span
+style='mso-tab-count:1'>                </span>MessageBox(NULL,&nbsp;“&nbsp;Acq.
+configuration error&nbsp;“,&nbsp;“&nbsp;Error&nbsp;“,MB_OK)&nbsp;;<o:p></o:p></span></b></p>
+
+<p style='margin:0cm;margin-bottom:.0001pt'><b><span lang=EN-US
+style='font-size:8.0pt;mso-bidi-font-size:10.0pt;font-family:Arial;color:white'><span
+style='mso-tab-count:1'>                </span>Return 0&nbsp;;<o:p></o:p></span></b></p>
+
+<p style='margin:0cm;margin-bottom:.0001pt'><b><span lang=EN-US
+style='font-size:8.0pt;mso-bidi-font-size:10.0pt;font-family:Arial;color:white'>}<o:p></o:p></span></b></p>
+
+<p style='margin:0cm;margin-bottom:.0001pt'><b><span lang=EN-US
+style='font-size:8.0pt;mso-bidi-font-size:10.0pt;font-family:Arial;color:white'>//
+Read status to know sizes of one scan (it’s useful to read data) <o:p></o:p></span></b></p>
+
+<p style='margin:0cm;margin-bottom:.0001pt'><b><span lang=EN-US
+style='font-size:8.0pt;mso-bidi-font-size:10.0pt;font-family:Arial;color:white'>//
+This function returns the status and others information<o:p></o:p></span></b></p>
+
+<p style='margin:0cm;margin-bottom:.0001pt'><b><span lang=EN-US
+style='font-size:8.0pt;mso-bidi-font-size:10.0pt;font-family:Arial;color:white'>//
+Normaly, we must get&nbsp;:<o:p></o:p></span></b></p>
+
+<p style='margin:0cm;margin-bottom:.0001pt'><b><span lang=EN-US
+style='font-size:8.0pt;mso-bidi-font-size:10.0pt;font-family:Arial;color:white'>//
+Status = ACQ_WAITING_START (4)<o:p></o:p></span></b></p>
+
+<p style='margin:0cm;margin-bottom:.0001pt'><b><span lang=EN-US
+style='font-size:8.0pt;mso-bidi-font-size:10.0pt;font-family:Arial;color:white'>//
+NumberOfScansAcquired = 0<o:p></o:p></span></b></p>
+
+<p style='margin:0cm;margin-bottom:.0001pt'><b><span lang=EN-US
+style='font-size:8.0pt;mso-bidi-font-size:10.0pt;font-family:Arial;color:white'>//
+NumberOfScansRead = 0<o:p></o:p></span></b></p>
+
+<p style='margin:0cm;margin-bottom:.0001pt'><b><span lang=EN-US
+style='font-size:8.0pt;mso-bidi-font-size:10.0pt;font-family:Arial;color:white'>//
+BufferSize no changed<o:p></o:p></span></b></p>
+
+<p style='margin:0cm;margin-bottom:.0001pt'><b><span lang=EN-US
+style='font-size:8.0pt;mso-bidi-font-size:10.0pt;font-family:Arial;color:white'>//
+ScansSize = 8 DWORD<o:p></o:p></span></b></p>
+
+<p style='margin:0cm;margin-bottom:.0001pt'><b><span lang=EN-US
+style='font-size:8.0pt;mso-bidi-font-size:10.0pt;font-family:Arial;color:white'>PCXUS_ACQ_GET_STATUS(Board,
+&amp;Status, &amp;NumberOfScansAcquired, &amp;NumberOfScansRead,
+&amp;BufferSize, &amp;ScanSize)&nbsp;;<o:p></o:p></span></b></p>
+
+<p style='margin:0cm;margin-bottom:.0001pt'><b><span lang=EN-US
+style='font-size:8.0pt;mso-bidi-font-size:10.0pt;font-family:Arial;color:white'>….<o:p></o:p></span></b></p>
+
+<p style='margin:0cm;margin-bottom:.0001pt'><b><span lang=EN-US
+style='font-size:8.0pt;mso-bidi-font-size:10.0pt;font-family:Arial;color:white'>….<o:p></o:p></span></b></p>
+
+<p style='margin:0cm;margin-bottom:.0001pt'><b><span lang=EN-US
+style='font-size:8.0pt;mso-bidi-font-size:10.0pt;font-family:Arial;color:white'>UCHAR
+*pData;<o:p></o:p></span></b></p>
+
+<p style='margin:0cm;margin-bottom:.0001pt'><b><span lang=EN-US
+style='font-size:8.0pt;mso-bidi-font-size:10.0pt;font-family:Arial;color:white'>pData
+= malloc(BufferSize*ScanSize*sizeof(DWORD))&nbsp;;<o:p></o:p></span></b></p>
+
+<p style='margin:0cm;margin-bottom:.0001pt'><b><span lang=EN-US
+style='font-size:8.0pt;mso-bidi-font-size:10.0pt;font-family:Arial;color:white'>if(pData
+== NULL)<o:p></o:p></span></b></p>
+
+<p style='margin:0cm;margin-bottom:.0001pt'><b><span lang=EN-US
+style='font-size:8.0pt;mso-bidi-font-size:10.0pt;font-family:Arial;color:white'>{<o:p></o:p></span></b></p>
+
+<p style='margin:0cm;margin-bottom:.0001pt'><b><span lang=EN-US
+style='font-size:8.0pt;mso-bidi-font-size:10.0pt;font-family:Arial;color:white'><span
+style='mso-tab-count:1'>                </span>MessageBox(NULL,&nbsp;“&nbsp;Memory
+allocation error&nbsp;“,&nbsp;“&nbsp;Error&nbsp;“,MB_OK)&nbsp;;<o:p></o:p></span></b></p>
+
+<p style='margin:0cm;margin-bottom:.0001pt'><b><span lang=EN-US
+style='font-size:8.0pt;mso-bidi-font-size:10.0pt;font-family:Arial;color:white'><span
+style='mso-tab-count:1'>                </span>Return 0&nbsp;;<o:p></o:p></span></b></p>
+
+<p style='margin:0cm;margin-bottom:.0001pt'><b><span lang=EN-US
+style='font-size:8.0pt;mso-bidi-font-size:10.0pt;font-family:Arial;color:white'>}<o:p></o:p></span></b></p>
+
+<p style='margin:0cm;margin-bottom:.0001pt'><b><span lang=EN-US
+style='font-size:8.0pt;mso-bidi-font-size:10.0pt;font-family:Arial;color:white'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></b></p>
+
+<p style='margin:0cm;margin-bottom:.0001pt'><b><span lang=EN-US
+style='font-size:8.0pt;mso-bidi-font-size:10.0pt;font-family:Arial;color:white'>TimeOut=int
+(ScanLenght/speed * 1.5);<o:p></o:p></span></b></p>
+
+<p style='margin:0cm;margin-bottom:.0001pt'><b><span lang=EN-US
+style='font-size:8.0pt;mso-bidi-font-size:10.0pt;font-family:Arial;color:white'>Do<o:p></o:p></span></b></p>
+
+<p style='margin:0cm;margin-bottom:.0001pt'><b><span lang=EN-US
+style='font-size:8.0pt;mso-bidi-font-size:10.0pt;font-family:Arial;color:white'>{<o:p></o:p></span></b></p>
+
+<p style='margin:0cm;margin-bottom:.0001pt'><b><span lang=EN-US
+style='font-size:8.0pt;mso-bidi-font-size:10.0pt;font-family:Arial;color:white'><span
+style='mso-tab-count:1'>                </span>//Enable acquisition<o:p></o:p></span></b></p>
+
+<p style='margin:0cm;margin-bottom:.0001pt'><b><span lang=EN-US
+style='font-size:8.0pt;mso-bidi-font-size:10.0pt;font-family:Arial;color:white'><span
+style='mso-tab-count:1'>                </span>Error=PCXUS_ACQ_START(hUSPC,Board,BufferSize)&nbsp;;<o:p></o:p></span></b></p>
+
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:35.4pt;
+margin-bottom:.0001pt'><b><span lang=EN-US style='font-size:8.0pt;mso-bidi-font-size:
+10.0pt;font-family:Arial;color:white'>if(Error)<o:p></o:p></span></b></p>
+
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:35.4pt;
+margin-bottom:.0001pt'><b><span lang=EN-US style='font-size:8.0pt;mso-bidi-font-size:
+10.0pt;font-family:Arial;color:white'>{<o:p></o:p></span></b></p>
+
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:35.4pt;
+margin-bottom:.0001pt'><b><span lang=EN-US style='font-size:8.0pt;mso-bidi-font-size:
+10.0pt;font-family:Arial;color:white'><span style='mso-tab-count:1'>                </span>MessageBox(NULL,&nbsp;“Start
+error&nbsp;“,&nbsp;“&nbsp;Error&nbsp;“,MB_OK)&nbsp;;<o:p></o:p></span></b></p>
+
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:35.4pt;
+margin-bottom:.0001pt'><b><span lang=EN-US style='font-size:8.0pt;mso-bidi-font-size:
+10.0pt;font-family:Arial;color:white'><span style='mso-tab-count:1'>                </span>Return
+0&nbsp;;<o:p></o:p></span></b></p>
+
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:35.4pt;
+margin-bottom:.0001pt'><b><span lang=EN-US style='font-size:8.0pt;mso-bidi-font-size:
+10.0pt;font-family:Arial;color:white'>}<o:p></o:p></span></b></p>
+
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:35.4pt;
+margin-bottom:.0001pt'><b><span lang=EN-US style='font-size:8.0pt;mso-bidi-font-size:
+10.0pt;font-family:Arial;color:white'>//Move to end of line<o:p></o:p></span></b></p>
+
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:35.4pt;
+margin-bottom:.0001pt'><b><span lang=EN-US style='font-size:8.0pt;mso-bidi-font-size:
+10.0pt;font-family:Arial;color:white'>….<o:p></o:p></span></b></p>
+
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:35.4pt;
+margin-bottom:.0001pt'><b><span lang=EN-US style='font-size:8.0pt;mso-bidi-font-size:
+10.0pt;font-family:Arial;color:white'>….<o:p></o:p></span></b></p>
+
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:35.4pt;
+margin-bottom:.0001pt'><b><span lang=EN-US style='font-size:8.0pt;mso-bidi-font-size:
+10.0pt;font-family:Arial;color:white'>// Read data<o:p></o:p></span></b></p>
+
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:35.4pt;
+margin-bottom:.0001pt'><b><span lang=EN-US style='font-size:8.0pt;mso-bidi-font-size:
+10.0pt;font-family:Arial;color:white'>Error=PCXUS_ACQ_READ(hUSPC,Board,BufferSize,
+TimeOut, &amp;NumberRead, &amp;ScanBacklog, pData);<o:p></o:p></span></b></p>
+
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:35.4pt;
+margin-bottom:.0001pt'><b><span lang=EN-US style='font-size:8.0pt;mso-bidi-font-size:
+10.0pt;font-family:Arial;color:white'>if(Error)<o:p></o:p></span></b></p>
+
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:35.4pt;
+margin-bottom:.0001pt'><b><span lang=EN-US style='font-size:8.0pt;mso-bidi-font-size:
+10.0pt;font-family:Arial;color:white'>{<o:p></o:p></span></b></p>
+
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:35.4pt;
+margin-bottom:.0001pt'><b><span lang=EN-US style='font-size:8.0pt;mso-bidi-font-size:
+10.0pt;font-family:Arial;color:white'><span style='mso-tab-count:1'>                </span>MessageBox(NULL,&nbsp;“Read
+error&nbsp;“,&nbsp;“&nbsp;Error&nbsp;“,MB_OK)&nbsp;;<o:p></o:p></span></b></p>
+
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:35.4pt;
+margin-bottom:.0001pt'><b><span lang=EN-US style='font-size:8.0pt;mso-bidi-font-size:
+10.0pt;font-family:Arial;color:white'><span style='mso-tab-count:1'>                </span>Return
+0&nbsp;;<o:p></o:p></span></b></p>
+
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:35.4pt;
+margin-bottom:.0001pt'><b><span lang=EN-US style='font-size:8.0pt;mso-bidi-font-size:
+10.0pt;font-family:Arial;color:white'>}<o:p></o:p></span></b></p>
+
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:35.4pt;
+margin-bottom:.0001pt'><b><span lang=EN-US style='font-size:8.0pt;mso-bidi-font-size:
+10.0pt;font-family:Arial;color:white'>// Disable acquisition<o:p></o:p></span></b></p>
+
+<p style='margin:0cm;margin-bottom:.0001pt'><b><span lang=EN-US
+style='font-size:8.0pt;mso-bidi-font-size:10.0pt;font-family:Arial;color:white'><span
+style='mso-tab-count:1'>                </span>Error=PCXUS_ACQ_STOP(hUSPC,Board)&nbsp;;<o:p></o:p></span></b></p>
+
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:35.4pt;
+margin-bottom:.0001pt'><b><span lang=EN-US style='font-size:8.0pt;mso-bidi-font-size:
+10.0pt;font-family:Arial;color:white'>if(Error)<o:p></o:p></span></b></p>
+
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:35.4pt;
+margin-bottom:.0001pt'><b><span lang=EN-US style='font-size:8.0pt;mso-bidi-font-size:
+10.0pt;font-family:Arial;color:white'>{<o:p></o:p></span></b></p>
+
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:35.4pt;
+margin-bottom:.0001pt'><b><span lang=EN-US style='font-size:8.0pt;mso-bidi-font-size:
+10.0pt;font-family:Arial;color:white'><span style='mso-tab-count:1'>                </span>MessageBox(NULL,&nbsp;“Stop
+error&nbsp;“,&nbsp;“&nbsp;Error&nbsp;“,MB_OK)&nbsp;;<o:p></o:p></span></b></p>
+
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:35.4pt;
+margin-bottom:.0001pt'><b><span lang=EN-US style='font-size:8.0pt;mso-bidi-font-size:
+10.0pt;font-family:Arial;color:white'><span style='mso-tab-count:1'>                </span>Return
+0&nbsp;;<o:p></o:p></span></b></p>
+
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:35.4pt;
+margin-bottom:.0001pt'><b><span lang=EN-US style='font-size:8.0pt;mso-bidi-font-size:
+10.0pt;font-family:Arial;color:white'>}<o:p></o:p></span></b></p>
+
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:35.4pt;
+margin-bottom:.0001pt'><b><span lang=EN-US style='font-size:8.0pt;mso-bidi-font-size:
+10.0pt;font-family:Arial;color:white'>// Get Amplitude Gate 1<o:p></o:p></span></b></p>
+
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:35.4pt;
+margin-bottom:.0001pt'><b><span lang=EN-US style='font-size:8.0pt;mso-bidi-font-size:
+10.0pt;font-family:Arial;color:white'>for(i=0;i&lt;BufferSize;i++)<o:p></o:p></span></b></p>
+
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:35.4pt;
+margin-bottom:.0001pt'><b><span lang=EN-US style='font-size:8.0pt;mso-bidi-font-size:
+10.0pt;font-family:Arial;color:white'>{<o:p></o:p></span></b></p>
+
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:35.4pt;
+margin-bottom:.0001pt'><b><span lang=EN-US style='font-size:8.0pt;mso-bidi-font-size:
+10.0pt;font-family:Arial;color:white'><span style='mso-tab-count:1'>                </span>Amplitude[i]=*(pData+I*8);<span
+style='mso-tab-count:1'> </span>// Amplitude is 8<sup>th</sup> bytes into
+C-scan structure<o:p></o:p></span></b></p>
+
+<p style='margin:0cm;margin-bottom:.0001pt'><b><span lang=EN-US
+style='font-size:8.0pt;mso-bidi-font-size:10.0pt;font-family:Arial;color:white'><span
+style='mso-tab-count:1'>                </span>}<o:p></o:p></span></b></p>
+
+<p style='margin:0cm;margin-bottom:.0001pt'><b><span lang=EN-US
+style='font-size:8.0pt;mso-bidi-font-size:10.0pt;font-family:Arial;color:white'><span
+style='mso-tab-count:1'>                </span>//Update C-scan graph<o:p></o:p></span></b></p>
+
+<p style='margin:0cm;margin-bottom:.0001pt'><b><span lang=EN-US
+style='font-size:8.0pt;mso-bidi-font-size:10.0pt;font-family:Arial;color:white'><span
+style='mso-tab-count:1'>                </span>….<o:p></o:p></span></b></p>
+
+<p style='margin:0cm;margin-bottom:.0001pt'><b><span lang=EN-US
+style='font-size:8.0pt;mso-bidi-font-size:10.0pt;font-family:Arial;color:white'><span
+style='mso-tab-count:1'>                </span>….<o:p></o:p></span></b></p>
+
+<p style='margin:0cm;margin-bottom:.0001pt'><b><span lang=EN-US
+style='font-size:8.0pt;mso-bidi-font-size:10.0pt;font-family:Arial;color:white'><span
+style='mso-tab-count:1'>                </span>//Move on Y<o:p></o:p></span></b></p>
+
+<p style='margin:0cm;margin-bottom:.0001pt'><b><span lang=EN-US
+style='font-size:8.0pt;mso-bidi-font-size:10.0pt;font-family:Arial;color:white'><span
+style='mso-tab-count:1'>                </span>….<o:p></o:p></span></b></p>
+
+<p style='margin:0cm;margin-bottom:.0001pt'><b><span lang=EN-US
+style='font-size:8.0pt;mso-bidi-font-size:10.0pt;font-family:Arial;color:white'><span
+style='mso-tab-count:1'>                </span>….<o:p></o:p></span></b></p>
+
+<p style='margin:0cm;margin-bottom:.0001pt;text-indent:35.4pt'><b><span
+lang=EN-US style='font-size:8.0pt;mso-bidi-font-size:10.0pt;font-family:Arial;
+color:white'>Line++&nbsp;;<o:p></o:p></span></b></p>
+
+<p style='margin:0cm;margin-bottom:.0001pt'><b><span lang=EN-US
+style='font-size:8.0pt;mso-bidi-font-size:10.0pt;font-family:Arial;color:white'>}
+while(Line&lt;NumberofLine)&nbsp;;<o:p></o:p></span></b></p>
+
+<p style='margin:0cm;margin-bottom:.0001pt'><b><span lang=EN-US
+style='font-size:8.0pt;mso-bidi-font-size:10.0pt;font-family:Arial;color:white'>Error=PCXUS_ACQ_CLEAR(hUSPC,Board)&nbsp;;<o:p></o:p></span></b></p>
+
+<p style='margin:0cm;margin-bottom:.0001pt'><b><span lang=EN-US
+style='font-size:8.0pt;mso-bidi-font-size:10.0pt;font-family:Arial;color:white'>if(Error)<o:p></o:p></span></b></p>
+
+<p style='margin:0cm;margin-bottom:.0001pt'><b><span lang=EN-US
+style='font-size:8.0pt;mso-bidi-font-size:10.0pt;font-family:Arial;color:white'>{<o:p></o:p></span></b></p>
+
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:35.4pt;
+margin-bottom:.0001pt'><b><span lang=EN-US style='font-size:8.0pt;mso-bidi-font-size:
+10.0pt;font-family:Arial;color:white'>MessageBox(NULL,&nbsp;“Clear
+error&nbsp;“,&nbsp;“&nbsp;Error&nbsp;“,MB_OK)&nbsp;;<o:p></o:p></span></b></p>
+
+<p style='margin:0cm;margin-bottom:.0001pt;text-indent:35.4pt'><b><span
+lang=EN-US style='font-size:8.0pt;mso-bidi-font-size:10.0pt;font-family:Arial;
+color:white'>Return 0&nbsp;;<o:p></o:p></span></b></p>
+
+<p style='margin:0cm;margin-bottom:.0001pt'><b><span lang=EN-US
+style='font-size:8.0pt;mso-bidi-font-size:10.0pt;font-family:Arial;color:white'>}<o:p></o:p></span></b></p>
+
+<p style='margin:0cm;margin-bottom:.0001pt'><b><span lang=EN-US
+style='font-size:8.0pt;mso-bidi-font-size:10.0pt;font-family:Arial;color:white'>Error=PCXUS_Close(hUSPC)&nbsp;;<o:p></o:p></span></b></p>
+
+<p style='margin:0cm;margin-bottom:.0001pt'><b><span lang=EN-US
+style='font-size:8.0pt;mso-bidi-font-size:10.0pt;font-family:Arial;color:white'>if(Error)<o:p></o:p></span></b></p>
+
+<p style='margin:0cm;margin-bottom:.0001pt'><b><span lang=EN-US
+style='font-size:8.0pt;mso-bidi-font-size:10.0pt;font-family:Arial;color:white'>{<o:p></o:p></span></b></p>
+
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:35.4pt;
+margin-bottom:.0001pt'><b><span lang=EN-US style='font-size:8.0pt;mso-bidi-font-size:
+10.0pt;font-family:Arial;color:white'>MessageBox(NULL,&nbsp;“Close
+error&nbsp;“,&nbsp;“&nbsp;Error&nbsp;“,MB_OK)&nbsp;;<o:p></o:p></span></b></p>
+
+<p style='margin:0cm;margin-bottom:.0001pt;text-indent:35.4pt'><b><span
+lang=EN-US style='font-size:8.0pt;mso-bidi-font-size:10.0pt;font-family:Arial;
+color:white'>Return 0&nbsp;;<o:p></o:p></span></b></p>
+
+<p style='margin:0cm;margin-bottom:.0001pt'><b><span lang=EN-US
+style='font-size:8.0pt;mso-bidi-font-size:10.0pt;font-family:Arial;color:white'>}<o:p></o:p></span></b></p>
+
+<p style='margin:0cm;margin-bottom:.0001pt'><b><span lang=EN-US
+style='font-size:8.0pt;mso-bidi-font-size:10.0pt;font-family:Arial;color:white'>…<o:p></o:p></span></b></p>
+
+<p style='margin:0cm;margin-bottom:.0001pt'><b><span lang=EN-US
+style='font-size:8.0pt;mso-bidi-font-size:10.0pt;font-family:Arial;color:white'>…<o:p></o:p></span></b></p>
+
+<p style='margin:0cm;margin-bottom:.0001pt'><b><span style='font-size:8.0pt;
+mso-bidi-font-size:10.0pt;font-family:Arial;color:white;mso-ansi-language:FR'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></b></p>
+
+<p style='margin:0cm;margin-bottom:.0001pt'><b><span style='font-size:8.0pt;
+mso-bidi-font-size:10.0pt;font-family:Arial;color:white;mso-ansi-language:FR'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></b></p>
+
+<p style='margin:0cm;margin-bottom:.0001pt'><b><span lang=EN-US
+style='font-size:8.0pt;mso-bidi-font-size:10.0pt;font-family:Arial;color:white'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></b></p>
+
+<p style='margin:0cm;margin-bottom:.0001pt'><b><span lang=EN-US
+style='font-size:10.0pt;font-family:Arial;color:white'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></b></p>
+
+<p class=MsoNormal><b><span lang=EN-US style='color:white'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></b></p>
+
+<p class=MsoNormal><span lang=EN-US style='color:white'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+</div>
+
+</body>
+
+</html>

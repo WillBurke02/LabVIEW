@@ -1,0 +1,90 @@
+﻿<UserControl
+    x:Class="TimetTankSix.Controls.NumericUpDown"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:conv="clr-namespace:TimetTankSix.Converters"
+    x:Name="Root">
+
+    <UserControl.Resources>
+        <conv:StringToVisibilityConverter x:Key="StringToVisibilityConverter" />
+        <conv:DarkenColorConverter x:Key="DarkenColourConverter" />
+    </UserControl.Resources>
+
+    <!--  MAIN CONTAINER  -->
+    <Grid x:Name="MainGrid">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition Width="Auto" />
+        </Grid.ColumnDefinitions>
+        <!--  LABEL OUTSIDE THE BOX  -->
+        <TextBlock
+            x:Name="LabelBlock"
+            Margin="0,0,0,0"
+            VerticalAlignment="Center"
+            Background="{Binding LabelBackground, RelativeSource={RelativeSource AncestorType=UserControl}}"
+            FontSize="{Binding LabelSize, ElementName=Root}"
+            Foreground="{Binding LabelForeground, RelativeSource={RelativeSource AncestorType=UserControl}}"
+            Text="{Binding Label, ElementName=Root}"
+            Visibility="{Binding Label, ElementName=Root, Converter={StaticResource StringToVisibilityConverter}}" />
+
+        <!--  THE NUMERIC BOX  -->
+        <Border
+            x:Name="ContentPanel"
+            Height="30"
+            MinWidth="130"
+            Background="White"
+            BorderBrush="{Binding ControlBorderBrush, ElementName=Root}"
+            BorderThickness="1">
+
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="Auto" />
+                </Grid.ColumnDefinitions>
+
+                <!--  Decrement  -->
+                <Button
+                    x:Name="DecrementButton"
+                    Grid.Column="0"
+                    Width="30"
+                    Background="{Binding ButtonBackground, RelativeSource={RelativeSource AncestorType=UserControl}}"
+                    BorderThickness="0,0,1,0"
+                    Click="DecrementButton_Click"
+                    Content="−"
+                    FontSize="16"
+                    FontWeight="Bold"
+                    Foreground="{Binding ButtonForeground, RelativeSource={RelativeSource AncestorType=UserControl}}" />
+
+                <!--  Value  -->
+                <TextBox
+                    x:Name="ValueTextBox"
+                    Grid.Column="1"
+                    Padding="5,0"
+                    HorizontalContentAlignment="Center"
+                    VerticalContentAlignment="Center"
+                    BorderThickness="0"
+                    LostFocus="ValueTextBox_LostFocus"
+                    PreviewTextInput="ValueTextBox_PreviewTextInput"
+                    Text="{Binding Value, ElementName=Root, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
+
+                <!--  Increment  -->
+                <Button
+                    x:Name="IncrementButton"
+                    Grid.Column="2"
+                    Width="30"
+                    Background="{Binding ButtonBackground, RelativeSource={RelativeSource AncestorType=UserControl}}"
+                    BorderThickness="1,0,0,0"
+                    Click="IncrementButton_Click"
+                    Content="+"
+                    FontSize="16"
+                    FontWeight="Bold"
+                    Foreground="{Binding ButtonForeground, RelativeSource={RelativeSource AncestorType=UserControl}}" />
+            </Grid>
+        </Border>
+    </Grid>
+</UserControl>

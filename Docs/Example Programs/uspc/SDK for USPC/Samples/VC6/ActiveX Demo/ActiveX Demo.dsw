@@ -1,0 +1,31 @@
+Microsoft Developer Studio Workspace File, Format Version 6.00
+# WARNING: DO NOT EDIT OR DELETE THIS WORKSPACE FILE!
+
+###############################################################################
+
+Project: "ActiveX Demo"=".\ActiveX Demo.dsp" - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Global:
+
+Package=<5>
+{{{
+}}}
+
+Package=<3>
+{{{
+    {32D62334-EB16-11D5-AA64-0004768C0C8B}
+    {A52F4F97-CB79-443C-A416-4289AB0690AB}
+}}}
+
+###############################################################################
+

@@ -1,0 +1,791 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 9">
+<meta name=Originator content="Microsoft Word 9">
+<link rel=File-List href="PCXUS_ACQ%20example_filelist.xml">
+<link rel=Edit-Time-Data href="PCXUS_ACQ%20example_editdata.mso">
+<link rel=OLE-Object-Data href="PCXUS_ACQ%20example_oledata.mso">
+<!--[if !mso]>
+<style>
+v\:* {behavior:url(#default#VML);}
+o\:* {behavior:url(#default#VML);}
+w\:* {behavior:url(#default#VML);}
+.shape {behavior:url(#default#VML);}
+</style>
+<![endif]-->
+<title>Learn with an example</title>
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>Alain</o:Author>
+  <o:Template>Normal</o:Template>
+  <o:LastAuthor>Alain</o:LastAuthor>
+  <o:Revision>41</o:Revision>
+  <o:TotalTime>874</o:TotalTime>
+  <o:Created>2002-09-16T13:30:00Z</o:Created>
+  <o:LastSaved>2002-10-28T12:53:00Z</o:LastSaved>
+  <o:Pages>6</o:Pages>
+  <o:Words>1313</o:Words>
+  <o:Characters>7488</o:Characters>
+  <o:Company>Socomate</o:Company>
+  <o:Lines>62</o:Lines>
+  <o:Paragraphs>14</o:Paragraphs>
+  <o:CharactersWithSpaces>9195</o:CharactersWithSpaces>
+  <o:Version>9.3821</o:Version>
+ </o:DocumentProperties>
+ <o:OfficeDocumentSettings>
+  <o:DoNotOrganizeInFolder/>
+ </o:OfficeDocumentSettings>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:View>Print</w:View>
+  <w:HyphenationZone>21</w:HyphenationZone>
+ </w:WordDocument>
+</xml><![endif]-->
+<style>
+<!--
+ /* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	color:windowtext;
+	mso-ansi-language:EN-US;}
+a:link, span.MsoHyperlink
+	{color:blue;
+	text-decoration:underline;
+	text-underline:single;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:purple;
+	text-decoration:underline;
+	text-underline:single;}
+p
+	{margin-right:0cm;
+	mso-margin-top-alt:auto;
+	mso-margin-bottom-alt:auto;
+	margin-left:0cm;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	color:black;
+	mso-ansi-language:EN-US;}
+@page Section1
+	{size:595.3pt 841.9pt;
+	margin:70.85pt 70.85pt 70.85pt 70.85pt;
+	mso-header-margin:35.4pt;
+	mso-footer-margin:35.4pt;
+	mso-paper-source:0;}
+div.Section1
+	{page:Section1;}
+ /* List Definitions */
+@list l0
+	{mso-list-id:1558668046;
+	mso-list-type:hybrid;
+	mso-list-template-ids:565766984 475046938 67895299 67895301 67895297 67895299 67895301 67895297 67895299 67895301;}
+@list l0:level1
+	{mso-level-start-at:0;
+	mso-level-number-format:bullet;
+	mso-level-text:-;
+	mso-level-tab-stop:36.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+ol
+	{margin-bottom:0cm;}
+ul
+	{margin-bottom:0cm;}
+-->
+</style>
+<!--[if gte mso 9]><xml>
+ <o:shapedefaults v:ext="edit" spidmax="1065">
+  <o:colormenu v:ext="edit" fillcolor="#930"/>
+ </o:shapedefaults></xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="1"/>
+ </o:shapelayout></xml><![endif]-->
+</head>
+
+<body lang=FR link=blue vlink=purple style='tab-interval:35.4pt'>
+
+<div class=Section1>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:8.0pt;mso-bidi-font-size:
+12.0pt;font-family:Arial'>PCXUS_ACQ example.htm<span style='color:black'><o:p></o:p></span></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:8.0pt;mso-bidi-font-size:
+12.0pt;font-family:Arial'>Update 28 October 2002</span><span lang=EN-US
+style='font-family:Arial;color:black'><o:p></o:p></span></p>
+
+<p style='margin:0cm;margin-bottom:.0001pt'><span lang=EN-US style='font-size:
+10.0pt;font-family:Arial'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p style='margin:0cm;margin-bottom:.0001pt'><span lang=EN-US style='font-size:
+10.0pt;font-family:Arial'>DLL Version 5.0<o:p></o:p></span></p>
+
+<p style='margin:0cm;margin-bottom:.0001pt'><span lang=EN-US style='font-size:
+10.0pt;font-family:Arial'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p style='margin:0cm;margin-bottom:.0001pt'><b><span lang=EN-US
+style='font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:Arial;color:blue'>Compatibility<o:p></o:p></span></b></p>
+
+<p style='margin:0cm;margin-bottom:.0001pt'><span lang=EN-GB style='font-size:
+10.0pt;font-family:Arial;mso-ansi-language:EN-GB'>Software&nbsp;: DLL version
+5.0<o:p></o:p></span></p>
+
+<p style='margin:0cm;margin-bottom:.0001pt'><span lang=EN-GB style='font-size:
+10.0pt;font-family:Arial;mso-ansi-language:EN-GB'>Platforms: Windows
+2000/NT4/XP (unsupported on Windows 98)<o:p></o:p></span></p>
+
+<p style='margin:0cm;margin-bottom:.0001pt'><span lang=EN-US><img width=1070
+height=4 id="_x0000_i1059" src=socoline.gif></span></p>
+
+<p style='margin:0cm;margin-bottom:.0001pt'><span lang=EN-US><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p style='margin:0cm;margin-bottom:.0001pt'><b><span style='font-size:10.0pt;
+font-family:Arial;color:blue;mso-ansi-language:FR'>Preface<o:p></o:p></span></b></p>
+
+<p style='margin:0cm;margin-bottom:.0001pt'><b><span style='font-size:10.0pt;
+font-family:Arial;color:blue;mso-ansi-language:FR'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></b></p>
+
+<p style='margin:0cm;margin-bottom:.0001pt'><span lang=EN-US style='font-size:
+16.0pt;mso-bidi-font-size:10.0pt;font-family:Arial;color:windowtext'>W</span><span
+lang=EN-US style='font-size:10.0pt;font-family:Arial;color:windowtext'>ith
+example as follows, we aim to teach you the best and simple way of using Data
+Acquisition Functions of our USPC card as well as getting under control all
+tricks and variable for setting them up properly.<o:p></o:p></span></p>
+
+<p style='margin:0cm;margin-bottom:.0001pt'><span lang=EN-US style='font-size:
+10.0pt;font-family:Arial;color:windowtext'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p style='margin:0cm;margin-bottom:.0001pt'><span lang=EN-US style='font-size:
+10.0pt;font-family:Arial;color:windowtext'>To illustrate those technique, we
+will study an ultrasonic testing application with immersion tank.<o:p></o:p></span></p>
+
+<p style='margin:0cm;margin-bottom:.0001pt'><span lang=EN-US style='font-size:
+10.0pt;font-family:Arial;color:windowtext'>Step by step, we will approach each
+acquisition mode such as:<o:p></o:p></span></p>
+
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:36.0pt;
+margin-bottom:.0001pt;text-indent:-18.0pt;mso-list:l0 level1 lfo2;tab-stops:
+list 36.0pt'><![if !supportLists]><span lang=EN-US style='font-size:10.0pt;
+color:windowtext'>-<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]><span lang=EN-US style='font-size:10.0pt;font-family:
+Arial;color:windowtext'>N points acquisition (stage 1),<o:p></o:p></span></p>
+
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:36.0pt;
+margin-bottom:.0001pt;text-indent:-18.0pt;mso-list:l0 level1 lfo2;tab-stops:
+list 36.0pt'><![if !supportLists]><span lang=EN-US style='font-size:10.0pt;
+color:windowtext'>-<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]><span lang=EN-US style='font-size:10.0pt;font-family:
+Arial;color:windowtext'>Continuous acquisition (stage 2),<o:p></o:p></span></p>
+
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:36.0pt;
+margin-bottom:.0001pt;text-indent:-18.0pt;mso-list:l0 level1 lfo2;tab-stops:
+list 36.0pt'><![if !supportLists]><span lang=EN-US style='font-size:10.0pt;
+color:windowtext'>-<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]><span lang=EN-US style='font-size:10.0pt;font-family:
+Arial;color:windowtext'>Trigger control acquisition (stage 3).<o:p></o:p></span></p>
+
+<p style='margin:0cm;margin-bottom:.0001pt'><span style='font-size:10.0pt;
+font-family:Arial;color:windowtext;mso-ansi-language:FR'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p style='margin:0cm;margin-bottom:.0001pt'><b><span style='font-size:10.0pt;
+font-family:Arial;color:blue;mso-ansi-language:FR'>Immersion tank application<o:p></o:p></span></b></p>
+
+<p style='margin:0cm;margin-bottom:.0001pt'><span style='font-size:10.0pt;
+font-family:Arial;color:windowtext;mso-ansi-language:FR'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p style='margin:0cm;margin-bottom:.0001pt'><span lang=EN-US style='font-size:
+16.0pt;mso-bidi-font-size:10.0pt;font-family:Arial;color:windowtext'>O</span><span
+lang=EN-US style='font-size:10.0pt;font-family:Arial;color:windowtext'>ur
+example will use a 3 axes (X-Y-Z) manipulator for testing flat parts in
+immersion. Scanning plan is always defined as X-Y; scanning axis is X, stepping
+axis is Y and Z axis for water gap setup.<o:p></o:p></span></p>
+
+<p style='margin:0cm;margin-bottom:.0001pt'><span lang=EN-US style='font-size:
+10.0pt;font-family:Arial;color:windowtext'>Application will allow displaying,
+in real time, A-scan signal and recording/displaying Amplitude &amp; TOF C-scan
+in Gate 1 and 2.<o:p></o:p></span></p>
+
+<p style='margin:0cm;margin-bottom:.0001pt'><span lang=EN-US style='font-size:
+10.0pt;font-family:Arial;color:windowtext'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<table border=0 cellspacing=0 cellpadding=0 style='border-collapse:collapse;
+ mso-padding-alt:0cm 3.5pt 0cm 3.5pt'>
+ <tr>
+  <td width=310 style='width:232.75pt;padding:0cm 3.5pt 0cm 3.5pt'>
+  <p style='margin:0cm;margin-bottom:.0001pt'><span lang=EN-US
+  style='font-size:10.0pt;font-family:Arial;color:windowtext'><img width=301
+  height=339 id="_x0000_i1049" src="Tank%20X-Y-Z.gif"><o:p></o:p></span></p>
+  <p align=center style='margin:0cm;margin-bottom:.0001pt;text-align:center'><span
+  style='font-size:8.0pt;mso-bidi-font-size:10.0pt;font-family:Arial;
+  color:windowtext;mso-ansi-language:FR'>(Tank X-Y-Z.gif)</span><span
+  style='font-size:10.0pt;font-family:Arial;color:windowtext;mso-ansi-language:
+  FR'><o:p></o:p></span></p>
+  </td>
+  <td width=304 style='width:227.85pt;padding:0cm 3.5pt 0cm 3.5pt'>
+  <p align=center style='margin:0cm;margin-bottom:.0001pt;text-align:center'><span
+  lang=EN-US style='font-size:10.0pt;font-family:Arial;color:windowtext'><img
+  width=218 height=244 id="_x0000_i1051" src="Tank%20scanning%20area.gif"><o:p></o:p></span></p>
+  <p align=center style='margin:0cm;margin-bottom:.0001pt;text-align:center'><span
+  lang=EN-US style='font-size:8.0pt;mso-bidi-font-size:10.0pt;font-family:Arial;
+  color:windowtext'>(Tank scanning area.gif)</span><span lang=EN-US
+  style='font-size:10.0pt;font-family:Arial;color:windowtext'><o:p></o:p></span></p>
+  </td>
+ </tr>
+</table>
+
+<p style='margin:0cm;margin-bottom:.0001pt'><span lang=EN-US style='font-size:
+10.0pt;font-family:Arial;color:windowtext'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<span lang=EN-US style='font-size:12.0pt;font-family:"Times New Roman";
+mso-fareast-font-family:"Times New Roman";color:black;mso-ansi-language:EN-US;
+mso-fareast-language:FR;mso-bidi-language:AR-SA'><br clear=all
+style='mso-special-character:line-break;page-break-before:always'>
+</span>
+
+<p style='margin:0cm;margin-bottom:.0001pt'><span lang=EN-US style='font-size:
+10.0pt;font-family:Arial;color:windowtext'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p style='margin:0cm;margin-bottom:.0001pt'><b><span style='font-size:10.0pt;
+font-family:Arial;color:blue;mso-ansi-language:FR'>Stage 1&nbsp;: N points
+acquisition<o:p></o:p></span></b></p>
+
+<p style='margin:0cm;margin-bottom:.0001pt'><b><span style='font-size:10.0pt;
+font-family:Arial;color:blue;mso-ansi-language:FR'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></b></p>
+
+<table border=0 cellspacing=0 cellpadding=0 align=left style='border-collapse:
+ collapse;mso-table-overlap:never;mso-table-lspace:7.05pt;mso-table-rspace:
+ 7.05pt;mso-table-anchor-vertical:paragraph;mso-table-anchor-horizontal:column;
+ mso-table-left:left;mso-table-top:.05pt;mso-padding-alt:0cm 3.5pt 0cm 3.5pt'>
+ <tr>
+  <td width=335 valign=top style='width:251.6pt;padding:0cm 3.5pt 0cm 3.5pt'>
+  <p style='margin-top:0cm;margin-right:-165.5pt;margin-bottom:0cm;margin-left:
+  0cm;margin-bottom:.0001pt;mso-element:frame;mso-element-frame-hspace:7.05pt;
+  mso-element-wrap:around;mso-element-anchor-vertical:paragraph;mso-element-anchor-horizontal:
+  column;mso-element-top:.05pt;mso-height-rule:exactly'><b><span
+  style='font-size:10.0pt;font-family:Arial;color:blue;mso-ansi-language:FR'><img
+  width=311 height=790 id="_x0000_i1053" src="Uspc%20acq%20example%20step1.gif"><o:p></o:p></span></b></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=335 valign=top style='width:251.6pt;padding:0cm 3.5pt 0cm 3.5pt'>
+  <p style='margin:0cm;margin-bottom:.0001pt;mso-element:frame;mso-element-frame-hspace:
+  7.05pt;mso-element-wrap:around;mso-element-anchor-vertical:paragraph;
+  mso-element-anchor-horizontal:column;mso-element-top:.05pt;mso-height-rule:
+  exactly'><span lang=EN-US style='font-size:8.0pt;mso-bidi-font-size:10.0pt;
+  font-family:Arial'>(Uspc acq example step1.gif)<o:p></o:p></span></p>
+  </td>
+ </tr>
+</table>
+
+<p style='margin:0cm;margin-bottom:.0001pt'><span lang=EN-US style='font-size:
+16.0pt;mso-bidi-font-size:10.0pt;font-family:Arial'>F</span><span lang=EN-US
+style='font-size:10.0pt;font-family:Arial'>irst of all, application software
+must open an access to USPC card (</span><u><span lang=EN-US style='font-size:
+10.0pt;font-family:Arial;color:blue'><a href="PCXUS_Open.htm">PCXUS_Open</a></span></u><span
+lang=EN-US style='font-size:10.0pt;font-family:Arial'>), and load the
+ultrasonic setting file or UT file (</span><u><span lang=EN-US
+style='font-size:10.0pt;font-family:Arial;color:blue'><a href="PCXUS_Load.htm">PCXUS_Load</a></span></u><span
+lang=EN-US style='font-size:10.0pt;font-family:Arial'>). Then we will select
+“External synchro.” mode in order data acquisition to be triggered from X axis
+scanning.<o:p></o:p></span></p>
+
+<p style='margin:0cm;margin-bottom:.0001pt'><span lang=EN-US style='font-size:
+10.0pt;font-family:Arial'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p style='margin:0cm;margin-bottom:.0001pt'><i><span lang=EN-US
+style='font-size:10.0pt;font-family:Arial;color:green'>Trick&nbsp;: when
+creaating UT file, select «&nbsp;Internal synchro.&nbsp;» in “Pulser” function,
+thus you will be able setting UT parameters with active A-scan signal without X
+axis to be necessary moving on. Immersion tank application software will
+control “synchro.” mode when running.<o:p></o:p></span></i></p>
+
+<p style='margin:0cm;margin-bottom:.0001pt'><i><span lang=EN-US
+style='font-size:10.0pt;font-family:Arial;color:green'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></i></p>
+
+<p style='margin:0cm;margin-bottom:.0001pt'><i><span lang=EN-US
+style='font-size:10.0pt;font-family:Arial;color:green'>Remark : we will use X
+axis encoder signal to trigger data acquisition (connect to USPC card Input </span></i><u><span
+lang=EN-US style='font-size:10.0pt;font-family:Arial;color:blue'><a
+href="..\..\..\uspc\Help\Help_annexe2_us.htm">PRF IN</a></span></u><i><span
+lang=EN-US style='font-size:10.0pt;font-family:Arial;color:green'>). If encoder
+resolution is not the required one for the application, or if you want to use
+another resolution, you have to use a division processing interface of encoder
+output ( example : PC card TIO-10 or PCI 6602 from<span style="mso-spacerun:
+yes">  </span></span></i><u><span style='font-size:10.0pt;font-family:Arial;
+color:blue;mso-ansi-language:FR'><a href="http://www.ni.com/"><span lang=EN-US
+style='mso-ansi-language:EN-US'>National Instruments</span></a></span></u><i><span
+lang=EN-US style='font-size:10.0pt;font-family:Arial;color:green'>). It is very
+important than pulsing shots are triggered by scanning axis. This will ensure
+that distance between two acquisition points is constant and well corresponding
+to your resolution. Indeed, scanning speed is not constant: speed profile xomes
+through an acceleration stage (starting scanning), a steady stage and finally a
+deceleration stage (stopping scanning).<o:p></o:p></span></i></p>
+
+<p style='margin:0cm;margin-bottom:.0001pt'><i><span lang=EN-US
+style='font-size:10.0pt;font-family:Arial;color:green'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></i></p>
+
+<p style='margin:0cm;margin-bottom:.0001pt'><span lang=EN-US style='font-size:
+10.0pt;font-family:Arial'>Application must run the scanning at the right
+starting point of control and define the control area. This area can be defined
+by scanning length, acquisition step resolution, number of scanning, Y axis
+step resolution and scanning speed.<o:p></o:p></span></p>
+
+<p style='margin:0cm;margin-bottom:.0001pt'><span lang=EN-US style='font-size:
+10.0pt;font-family:Arial'>From all those information we are then able to define
+the configuration parameters of acquisition.<o:p></o:p></span></p>
+
+<p style='margin:0cm;margin-bottom:.0001pt'><span lang=EN-US style='font-size:
+10.0pt;font-family:Arial'>First of all, lets calculate the buffer size<o:p></o:p></span></p>
+
+<p style='margin:0cm;margin-bottom:.0001pt'><span style='font-size:10.0pt;
+font-family:Arial;mso-ansi-language:FR'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p style='margin:0cm;margin-bottom:.0001pt'><span style='font-size:10.0pt;
+font-family:Arial;mso-text-raise:-14.0pt;mso-ansi-language:FR'><!--[if gte vml 1]><v:shapetype
+ id="_x0000_t75" coordsize="21600,21600" o:spt="75" o:preferrelative="t"
+ path="m@4@5l@4@11@9@11@9@5xe" filled="f" stroked="f">
+ <v:stroke joinstyle="miter"/>
+ <v:formulas>
+  <v:f eqn="if lineDrawn pixelLineWidth 0"/>
+  <v:f eqn="sum @0 1 0"/>
+  <v:f eqn="sum 0 0 @1"/>
+  <v:f eqn="prod @2 1 2"/>
+  <v:f eqn="prod @3 21600 pixelWidth"/>
+  <v:f eqn="prod @3 21600 pixelHeight"/>
+  <v:f eqn="sum @0 0 1"/>
+  <v:f eqn="prod @6 1 2"/>
+  <v:f eqn="prod @7 21600 pixelWidth"/>
+  <v:f eqn="sum @8 21600 0"/>
+  <v:f eqn="prod @7 21600 pixelHeight"/>
+  <v:f eqn="sum @10 21600 0"/>
+ </v:formulas>
+ <v:path o:extrusionok="f" gradientshapeok="t" o:connecttype="rect"/>
+ <o:lock v:ext="edit" aspectratio="t"/>
+</v:shapetype><v:shape id="_x0000_i1060" type="#_x0000_t75" style='width:195pt;
+ height:33pt' o:ole="">
+ <v:imagedata src="PCXUS_ACQ%20example_image001.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=260 height=44
+src="PCXUS_ACQ%20example_image002.gif" v:shapes="_x0000_i1060"><![endif]><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1060"
+  DrawAspect="Content" ObjectID="_1097318351">
+ </o:OLEObject>
+</xml><![endif]--></span><span style='font-size:10.0pt;font-family:Arial;
+mso-ansi-language:FR'><o:p></o:p></span></p>
+
+<p style='margin:0cm;margin-bottom:.0001pt'><span style='font-size:10.0pt;
+font-family:Arial;mso-ansi-language:FR'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p style='margin:0cm;margin-bottom:.0001pt'><span lang=EN-US style='font-size:
+10.0pt;font-family:Arial'>Then lets calculate the scanning time for one
+scanning line&nbsp;; This will fix the maximum time we allow in function
+“PCXUS_ACQ_READ” to get all data points. We will apply 1.5 factor to this time
+in our example in order taking in account acceleration and deceleration stages.<o:p></o:p></span></p>
+
+<p style='margin:0cm;margin-bottom:.0001pt'><span lang=EN-US style='font-size:
+10.0pt;font-family:Arial'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p style='margin:0cm;margin-bottom:.0001pt'><span style='font-size:10.0pt;
+font-family:Arial;mso-text-raise:-15.0pt;mso-ansi-language:FR'><!--[if gte vml 1]><v:shape
+ id="_x0000_i1061" type="#_x0000_t75" style='width:198pt;height:33.75pt' o:ole="">
+ <v:imagedata src="PCXUS_ACQ%20example_image003.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=264 height=45
+src="PCXUS_ACQ%20example_image004.gif" v:shapes="_x0000_i1061"><![endif]><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1061"
+  DrawAspect="Content" ObjectID="_1097318352">
+ </o:OLEObject>
+</xml><![endif]--><o:p></o:p></span></p>
+
+<p style='margin:0cm;margin-bottom:.0001pt'><span lang=EN-US style='font-size:
+10.0pt;font-family:Arial;mso-text-raise:-15.0pt'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p style='margin:0cm;margin-bottom:.0001pt'><span lang=EN-US style='font-size:
+10.0pt;font-family:Arial;mso-text-raise:-15.0pt'>Lets selects the type of data
+we need acquiring; Bear our interest on Gate 1 peak amplitude. We must select
+the type of C-scan (code 0x800). We then, while picking up all data acquisition
+in Gate 1, have to take data amplitude out.<o:p></o:p></span></p>
+
+<p style='margin:0cm;margin-bottom:.0001pt'><span lang=EN-US style='font-size:
+10.0pt;font-family:Arial;mso-text-raise:-15.0pt'>With our example, we acquire
+amplitude in Gate 1, the call of function “PCXUS_ACQ_GET_STATUS” will give us
+back the size (DWORD) of one point of measurement.<o:p></o:p></span></p>
+
+<p style='margin:0cm;margin-bottom:.0001pt'><span lang=EN-US style='font-size:
+10.0pt;font-family:Arial;mso-text-raise:-15.0pt'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p style='margin:0cm;margin-bottom:.0001pt'><span lang=EN-US style='font-size:
+10.0pt;font-family:Arial;mso-text-raise:-15.0pt'><a
+href="Tank%20application%20(step%201).htm">See C-code of program</a></span><span
+style='font-size:10.0pt;font-family:Arial;mso-text-raise:-15.0pt;mso-ansi-language:
+FR'><o:p></o:p></span></p>
+
+<p style='margin:0cm;margin-bottom:.0001pt'><span style='font-size:10.0pt;
+font-family:Arial;mso-ansi-language:FR'><a
+href="Tank%20application%20(step%201).htm"></a>&nbsp;<o:p></o:p></span></p>
+
+<span style='font-size:12.0pt;font-family:"Times New Roman";mso-fareast-font-family:
+"Times New Roman";color:black;mso-ansi-language:FR;mso-fareast-language:FR;
+mso-bidi-language:AR-SA'><br clear=all style='mso-special-character:line-break;
+page-break-before:always'>
+</span>
+
+<p style='margin:0cm;margin-bottom:.0001pt'><b><span style='font-size:10.0pt;
+font-family:Arial;color:blue;mso-ansi-language:FR'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></b></p>
+
+<p style='margin:0cm;margin-bottom:.0001pt'><b><span style='font-size:10.0pt;
+font-family:Arial;color:blue;mso-ansi-language:FR'>Stage 2&nbsp;: </span></b><b><span
+lang=EN-US style='font-size:10.0pt;font-family:Arial;color:blue'>Continuous</span></b><b><span
+style='font-size:10.0pt;font-family:Arial;color:blue;mso-ansi-language:FR'>
+acquisition<o:p></o:p></span></b></p>
+
+<p style='margin:0cm;margin-bottom:.0001pt'><b><span style='font-size:10.0pt;
+font-family:Arial;color:blue;mso-ansi-language:FR'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></b></p>
+
+<table border=0 cellspacing=0 cellpadding=0 align=left style='border-collapse:
+ collapse;mso-table-overlap:never;mso-table-lspace:7.05pt;mso-table-rspace:
+ 7.05pt;mso-table-anchor-vertical:paragraph;mso-table-anchor-horizontal:column;
+ mso-table-left:left;mso-table-top:.05pt;mso-padding-alt:0cm 3.5pt 0cm 3.5pt'>
+ <tr>
+  <td width=335 valign=top style='width:251.6pt;padding:0cm 3.5pt 0cm 3.5pt'>
+  <p style='margin:0cm;margin-bottom:.0001pt;mso-element:frame;mso-element-frame-hspace:
+  7.05pt;mso-element-wrap:around;mso-element-anchor-vertical:paragraph;
+  mso-element-anchor-horizontal:column;mso-element-top:.05pt;mso-height-rule:
+  exactly'><b><span style='font-size:10.0pt;font-family:Arial;color:blue;
+  mso-ansi-language:FR'><img border=0 width=322 height=862 id="_x0000_i1055"
+  src="Uspc%20acq%20example%20step2.gif"><o:p></o:p></span></b></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=335 valign=top style='width:251.6pt;padding:0cm 3.5pt 0cm 3.5pt'>
+  <p style='margin:0cm;margin-bottom:.0001pt;mso-element:frame;mso-element-frame-hspace:
+  7.05pt;mso-element-wrap:around;mso-element-anchor-vertical:paragraph;
+  mso-element-anchor-horizontal:column;mso-element-top:.05pt;mso-height-rule:
+  exactly'><span lang=EN-US style='font-size:8.0pt;mso-bidi-font-size:10.0pt;
+  font-family:Arial'>(Uspc acq example step2.gif)<o:p></o:p></span></p>
+  </td>
+ </tr>
+</table>
+
+<p style='margin:0cm;margin-bottom:.0001pt'><span lang=EN-US style='font-size:
+16.0pt;mso-bidi-font-size:10.0pt;font-family:Arial;color:windowtext'>I</span><span
+lang=EN-US style='font-size:10.0pt;font-family:Arial;color:windowtext'>n
+previous example, keeping C-scan mapping up-to-date is made at end of scanning
+line. Think up we want up-to-date C-scan mapping whilst<span
+style="mso-spacerun: yes">   </span>X axis is moving; This will bring double
+interest when scanning line is too long:<o:p></o:p></span></p>
+
+<p style='margin:0cm;margin-bottom:.0001pt'><span lang=EN-US style='font-size:
+10.0pt;font-family:Arial;color:windowtext'>1 – we do not have to wait for end
+of scanning to display result.<o:p></o:p></span></p>
+
+<p style='margin:0cm;margin-bottom:.0001pt'><span lang=EN-US style='font-size:
+10.0pt;font-family:Arial;color:windowtext'>2 – we can empty DLL memory at
+regular intervals in order to optimize it.<o:p></o:p></span></p>
+
+<p style='margin:0cm;margin-bottom:.0001pt'><span lang=EN-US style='font-size:
+10.0pt;font-family:Arial;color:windowtext'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p style='margin:0cm;margin-bottom:.0001pt'><span lang=EN-US style='font-size:
+10.0pt;font-family:Arial;color:windowtext'>Lets remind us of data transfer
+principle:<o:p></o:p></span></p>
+
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:18.0pt;
+margin-bottom:.0001pt'><span lang=EN-US style='font-size:10.0pt;font-family:
+Arial;color:windowtext'><span style="mso-spacerun: yes"> </span>- data are
+transferred from USPC card to DLL memory at such a rate defined by “Fluidity”
+parameter.<o:p></o:p></span></p>
+
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:18.0pt;
+margin-bottom:.0001pt'><span lang=EN-US style='font-size:10.0pt;font-family:
+Arial;color:windowtext'><span style="mso-spacerun: yes"> </span>- Then toward
+application software memory at a rate requested by this application.<o:p></o:p></span></p>
+
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:18.0pt;
+margin-bottom:.0001pt'><span lang=EN-US style='font-size:10.0pt;font-family:
+Arial;color:windowtext'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:18.0pt;
+margin-bottom:.0001pt'><span lang=EN-US style='font-size:10.0pt;font-family:
+Arial;color:windowtext'>Bear our interest on one type of data, i.e amplitude in
+Gate 1; memory size necessary to receive a full scanning line is 32 times less
+than memory allocated by DLL (one C-scan point is 32 bytes and amplitude is 1
+byte).<o:p></o:p></span></p>
+
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:18.0pt;
+margin-bottom:.0001pt'><span lang=EN-US style='font-size:10.0pt;font-family:
+Arial;color:windowtext'>Example&nbsp;: we want 100 scanning lines and 3000
+points per line. If we want acquire all points per line at once, we must
+allocate a buffer of 3000 C-scans in DLL and application must set an array of
+3000 bytes multiplied per 100 lines.<o:p></o:p></span></p>
+
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:18.0pt;
+margin-bottom:.0001pt'><span lang=EN-US style='font-size:10.0pt;font-family:
+Arial;color:windowtext'>Total necessary memory for this application is then:<o:p></o:p></span></p>
+
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:18.0pt;
+margin-bottom:.0001pt'><span lang=EN-US style='font-size:10.0pt;font-family:
+Arial;color:windowtext'>3000 C-scan of 32 bytes (used by DLL) = 96 KB <o:p></o:p></span></p>
+
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:18.0pt;
+margin-bottom:.0001pt'><span lang=EN-US style='font-size:10.0pt;font-family:
+Arial;color:windowtext'>3000 bytes (amplitude) per 100 lines = 300 KB<o:p></o:p></span></p>
+
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:18.0pt;
+margin-bottom:.0001pt'><span lang=EN-US style='font-size:10.0pt;font-family:
+Arial;color:windowtext'>Total = 396 KB<o:p></o:p></span></p>
+
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:18.0pt;
+margin-bottom:.0001pt'><span lang=EN-US style='font-size:10.0pt;font-family:
+Arial;color:windowtext'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:18.0pt;
+margin-bottom:.0001pt'><span lang=EN-US style='font-size:10.0pt;font-family:
+Arial;color:windowtext'>Now cut out a line with packs of 100 points, we can
+then allocate a smaller buffer (200 for example).<o:p></o:p></span></p>
+
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:18.0pt;
+margin-bottom:.0001pt'><span lang=EN-US style='font-size:10.0pt;font-family:
+Arial;color:windowtext'>Total necessary memory becomes then:<o:p></o:p></span></p>
+
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:18.0pt;
+margin-bottom:.0001pt'><span lang=EN-US style='font-size:10.0pt;font-family:
+Arial;color:windowtext'>200 C-scan of 32 bytes (used by DLL) = 6.4 KB<o:p></o:p></span></p>
+
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:18.0pt;
+margin-bottom:.0001pt'><span lang=EN-US style='font-size:10.0pt;font-family:
+Arial;color:windowtext'>3000 bytes (amplitude) per 100 lines = 300 KB<o:p></o:p></span></p>
+
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:18.0pt;
+margin-bottom:.0001pt'><span lang=EN-US style='font-size:10.0pt;font-family:
+Arial;color:windowtext'>Total = 306.4 KB<o:p></o:p></span></p>
+
+<p style='margin:0cm;margin-bottom:.0001pt'><span lang=EN-US style='font-size:
+10.0pt;font-family:Arial;color:windowtext'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p style='margin:0cm;margin-bottom:.0001pt'><i><span lang=EN-US
+style='font-size:10.0pt;font-family:Arial;color:green'>NB&nbsp;: This method,
+consisting in allocating part of memory and in reading it at regular interval,
+must use a circular buffer. Data are </span></i><i><span lang=EN-GB
+style='font-size:10.0pt;font-family:Arial;color:green;mso-ansi-language:EN-GB'>bufferized</span></i><i><span
+lang=EN-US style='font-size:10.0pt;font-family:Arial;color:green'> and when getting
+to end of it, then data writing get back to buffer start.</span></i><i><span
+style='font-size:10.0pt;font-family:Arial;color:green;mso-ansi-language:FR'><o:p></o:p></span></i></p>
+
+<p style='margin:0cm;margin-bottom:.0001pt'><i><span style='mso-bidi-font-size:
+10.0pt;font-family:Arial;color:green;mso-ansi-language:FR'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></i></p>
+
+<p style='margin:0cm;margin-bottom:.0001pt'><i><span lang=EN-US
+style='mso-bidi-font-size:10.0pt;font-family:Arial;color:green'>This method is
+absolutely necessary when testing long products or products in one continuous
+stream such as tubes, plate mills, bar mills, casting…<o:p></o:p></span></i></p>
+
+<p style='margin:0cm;margin-bottom:.0001pt'><i><span style='mso-bidi-font-size:
+10.0pt;font-family:Arial;color:green;mso-ansi-language:FR'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></i></p>
+
+<p style='margin:0cm;margin-bottom:.0001pt'><span lang=EN-US style='font-size:
+10.0pt;font-family:Arial;color:windowtext'>Our application will have to read packs
+of data and display them at regular interval till end of scanning.<o:p></o:p></span></p>
+
+<p style='margin:0cm;margin-bottom:.0001pt'><span lang=EN-US style='font-size:
+10.0pt;font-family:Arial;color:windowtext'>Using this method will lead you
+taking a few precautions. First of all, take care that processing time
+(display/record) of data packs read is not over than necessary time to acquire
+those data packs; unlike this buffer will get full and new data will overwrite
+old ones (overwrite error).<o:p></o:p></span></p>
+
+<p style='margin:0cm;margin-bottom:.0001pt'><span lang=EN-US style='font-size:
+10.0pt;font-family:Arial;color:windowtext'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p style='margin:0cm;margin-bottom:.0001pt'><span lang=EN-US style='font-size:
+10.0pt;font-family:Arial;color:windowtext'>Parameters such as:<o:p></o:p></span></p>
+
+<p style='margin:0cm;margin-bottom:.0001pt'><span lang=EN-US style='font-size:
+10.0pt;font-family:Arial;color:windowtext'><span style="mso-spacerun:
+yes"> </span>- “BufferSize” and “Fluidity” from “PCXUS_ACQ_CONFIG” function,<o:p></o:p></span></p>
+
+<p style='margin:0cm;margin-bottom:.0001pt'><span lang=EN-US style='font-size:
+10.0pt;font-family:Arial;color:windowtext'><span style="mso-spacerun:
+yes"> </span>- “NumberOfScansToRead” and “ScanBackLog” from “PCXUS_ACQ_READ”
+function<o:p></o:p></span></p>
+
+<p style='margin:0cm;margin-bottom:.0001pt'><span lang=EN-US style='font-size:
+10.0pt;font-family:Arial;color:windowtext'>will allow you to control this time.<o:p></o:p></span></p>
+
+<p style='margin:0cm;margin-bottom:.0001pt'><span lang=EN-US style='font-size:
+10.0pt;font-family:Arial;color:windowtext'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p style='margin:0cm;margin-bottom:.0001pt'><span lang=EN-US style='font-size:
+10.0pt;font-family:Arial;color:windowtext'>“ScanBackLog” is the number of
+remaining points after reading the buffer. When<span style="mso-spacerun:
+yes">  </span>this number increases, it means processing time is too long, in
+that case you must increase the number of points to read and/or increase
+“Fluidity”.<o:p></o:p></span></p>
+
+<p style='margin:0cm;margin-bottom:.0001pt'><span lang=EN-US style='font-size:
+10.0pt;font-family:Arial;color:windowtext'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p style='margin:0cm;margin-bottom:.0001pt'><span lang=EN-US style='font-size:
+10.0pt;font-family:Arial;color:windowtext'>“Fluidity” selects the number of
+points to be transferred from USPC card to buffer. This number determines then
+the filling speed of buffer (see scheme in section </span><span
+style='font-size:10.0pt;font-family:Arial;color:windowtext;mso-ansi-language:
+FR'><a href="PCXUS_ACQ.htm#Principe"><span lang=EN-US style='mso-ansi-language:
+EN-US'>Principe of data transfer</span></a></span><span lang=EN-US
+style='font-size:10.0pt;font-family:Arial;color:windowtext'>).<o:p></o:p></span></p>
+
+<p style='margin:0cm;margin-bottom:.0001pt'><span lang=EN-US style='font-size:
+10.0pt;font-family:Arial;color:windowtext'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p style='margin:0cm;margin-bottom:.0001pt'><i><span lang=EN-US
+style='font-size:10.0pt;font-family:Arial;color:green'>Remark&nbsp;: if you
+type a negative value in “NumberOfScansToRead”&nbsp;, “PCXUS_ACQ_READ” function
+will read all points in buffer. Remaining points fram “ScanBackLOg” should be
+only zero anyway.<o:p></o:p></span></i></p>
+
+<p style='margin:0cm;margin-bottom:.0001pt'><i><span style='font-size:10.0pt;
+font-family:Arial;color:green;mso-ansi-language:FR'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></i></p>
+
+<span style='font-size:12.0pt;font-family:"Times New Roman";mso-fareast-font-family:
+"Times New Roman";color:black;mso-ansi-language:FR;mso-fareast-language:FR;
+mso-bidi-language:AR-SA'><br clear=all style='mso-special-character:line-break;
+page-break-before:always'>
+</span>
+
+<p style='margin:0cm;margin-bottom:.0001pt'><span style='font-size:10.0pt;
+font-family:Arial;mso-ansi-language:FR'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p style='margin:0cm;margin-bottom:.0001pt'><b><span style='font-size:10.0pt;
+font-family:Arial;color:blue;mso-ansi-language:FR'>Stage 3&nbsp;:
+Trigger-control acquisition<o:p></o:p></span></b></p>
+
+<p style='margin:0cm;margin-bottom:.0001pt'><b><span style='font-size:10.0pt;
+font-family:Arial;color:blue;mso-ansi-language:FR'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></b></p>
+
+<table border=0 cellspacing=0 cellpadding=0 align=left style='border-collapse:
+ collapse;mso-table-overlap:never;mso-table-lspace:7.05pt;mso-table-rspace:
+ 7.05pt;mso-table-anchor-vertical:paragraph;mso-table-anchor-horizontal:column;
+ mso-table-left:left;mso-table-top:.05pt;mso-padding-alt:0cm 3.5pt 0cm 3.5pt'>
+ <tr>
+  <td width=335 valign=top style='width:251.6pt;padding:0cm 3.5pt 0cm 3.5pt'>
+  <p style='margin:0cm;margin-bottom:.0001pt;mso-element:frame;mso-element-frame-hspace:
+  7.05pt;mso-element-wrap:around;mso-element-anchor-vertical:paragraph;
+  mso-element-anchor-horizontal:column;mso-element-top:.05pt;mso-height-rule:
+  exactly'><b><span style='font-size:10.0pt;font-family:Arial;color:blue;
+  mso-ansi-language:FR'><img border=0 width=311 height=867 id="_x0000_i1057"
+  src="Uspc%20acq%20example%20step3.gif"><o:p></o:p></span></b></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=335 valign=top style='width:251.6pt;padding:0cm 3.5pt 0cm 3.5pt'>
+  <p style='margin:0cm;margin-bottom:.0001pt;mso-element:frame;mso-element-frame-hspace:
+  7.05pt;mso-element-wrap:around;mso-element-anchor-vertical:paragraph;
+  mso-element-anchor-horizontal:column;mso-element-top:.05pt;mso-height-rule:
+  exactly'><span lang=EN-US style='font-size:8.0pt;mso-bidi-font-size:10.0pt;
+  font-family:Arial'>(Uspc acq example step3.gif)<o:p></o:p></span></p>
+  </td>
+ </tr>
+</table>
+
+<p style='margin:0cm;margin-bottom:.0001pt'><span style='font-size:16.0pt;
+mso-bidi-font-size:10.0pt;font-family:Arial;color:windowtext;mso-ansi-language:
+FR'>T</span><span style='font-size:10.0pt;font-family:Arial;color:windowtext;
+mso-ansi-language:FR'>rigger-control acquisition mode can be used in flollowing
+cases&nbsp;:<o:p></o:p></span></p>
+
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:3.0pt;
+margin-bottom:.0001pt'><span style='font-size:10.0pt;font-family:Arial;
+color:windowtext;mso-ansi-language:FR'><span style="mso-spacerun: yes"> </span>-
+1) External signal (ENABLE pin 6) allowing acquisitions.<o:p></o:p></span></p>
+
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:3.0pt;
+margin-bottom:.0001pt'><span style='font-size:10.0pt;font-family:Arial;
+color:windowtext;mso-ansi-language:FR'><span style="mso-spacerun:
+yes"> </span>- 2) We want to make acquisition only in case of one or several
+alarms( Alarm +/Alarm -/Min. alarm/Max. alarm…)<o:p></o:p></span></p>
+
+<p style='margin:0cm;margin-bottom:.0001pt'><span style='font-size:10.0pt;
+font-family:Arial;color:windowtext;mso-ansi-language:FR'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p style='margin:0cm;margin-bottom:.0001pt'><i><span style='font-size:10.0pt;
+font-family:Arial;color:#339966;mso-ansi-language:FR'>Remark&nbsp;: both cases
+1 &amp; 2 can be combined together.<o:p></o:p></span></i></p>
+
+<p style='margin:0cm;margin-bottom:.0001pt'><span style='font-size:10.0pt;
+font-family:Arial;color:windowtext;mso-ansi-language:FR'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p style='margin:0cm;margin-bottom:.0001pt'><span lang=EN-US style='font-size:
+10.0pt;font-family:Arial;color:windowtext'>Case 2) allows also to optimize
+memory size (RAM or hard disk). Lets assume we want to record only data when
+USPC card detects an echo into Gate, optimising effect should be huge&nbsp;!
+when ni defect is detected, then memory size is zero.<o:p></o:p></span></p>
+
+<p style='margin:0cm;margin-bottom:.0001pt'><span lang=EN-US style='font-size:
+10.0pt;font-family:Arial;color:windowtext'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p style='margin:0cm;margin-bottom:.0001pt'><span lang=EN-US style='font-size:
+10.0pt;font-family:Arial;color:windowtext'>Quite often, it is interesting to
+kwon what happening before and after the defect; this possibility is proposed
+to you when you need recording A-scan data. “Pre-Post trigger” parameter will
+define the number of A-scan to be recorede before and after trigger
+occurrences.<o:p></o:p></span></p>
+
+<p style='margin:0cm;margin-bottom:.0001pt'><span lang=EN-US style='font-size:
+10.0pt;font-family:Arial;color:windowtext'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p style='margin:0cm;margin-bottom:.0001pt'><span lang=EN-US style='font-size:
+10.0pt;font-family:Arial;color:windowtext'>To pitcher this method, our
+application will record A-scan when echo overpasses Gate 1 alarm threshold; we
+will record 10 A-scans before and after alarm detection. This example will
+likely runs pointers shown in each A-scans. Those pointers allow us positioning
+each A-scan. Indeed, in previous examples, we were able to figure out position
+of each point within scanning line (position X of point N = N * scanning step).
+This is not possible anymore when using trigger-control acquisitions. We will
+use “pulse_counter” (counter 32 bits) to locate an acquisition point (position
+X of point N = Pulse_counter(N) * scanning step).<o:p></o:p></span></p>
+
+<p style='margin:0cm;margin-bottom:.0001pt'><span style='font-size:10.0pt;
+font-family:Arial;color:windowtext;mso-ansi-language:FR'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p style='margin:0cm;margin-bottom:.0001pt'><span style='font-size:10.0pt;
+font-family:Arial;color:windowtext;mso-ansi-language:FR'><a
+href="Tank%20application%20(step%203).htm">See C-code of program</a><o:p></o:p></span></p>
+
+<p style='margin:0cm;margin-bottom:.0001pt'><i><span style='font-size:10.0pt;
+font-family:Arial;color:green;mso-ansi-language:FR'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></i></p>
+
+<p style='margin:0cm;margin-bottom:.0001pt'><i><span style='font-size:10.0pt;
+font-family:Arial;color:green;mso-ansi-language:FR'><span style="mso-spacerun:
+yes"> </span><o:p></o:p></span></i></p>
+
+<p style='margin:0cm;margin-bottom:.0001pt'><span style='font-size:10.0pt;
+font-family:Arial;color:windowtext;mso-ansi-language:FR'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p style='margin:0cm;margin-bottom:.0001pt'><span style='font-size:10.0pt;
+font-family:Arial;color:windowtext;mso-ansi-language:FR'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p style='margin:0cm;margin-bottom:.0001pt'><u><span style='font-size:10.0pt;
+font-family:Arial;color:windowtext;mso-ansi-language:FR'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></u></p>
+
+<p style='margin:0cm;margin-bottom:.0001pt'><span style='font-size:10.0pt;
+font-family:Arial;mso-ansi-language:FR'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p style='margin:0cm;margin-bottom:.0001pt'><span style='font-size:10.0pt;
+font-family:Arial;mso-ansi-language:FR'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+</div>
+
+</body>
+
+</html>

@@ -1,0 +1,56 @@
+﻿<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:System="clr-namespace:System;assembly=mscorlib">
+    <!--#region  Fonts-->
+    <System:Double x:Key="ExtraSmallFont">10</System:Double>
+    <System:Double x:Key="SmallFont">12</System:Double>
+    <System:Double x:Key="MediumFont">14</System:Double>
+    <System:Double x:Key="LargeFont">18</System:Double>
+    <System:Double x:Key="ExtraLargeFont">22</System:Double>
+    <System:Double x:Key="TitleFont">26</System:Double>
+    <System:Double x:Key="IconFontSize">32</System:Double>
+    <!--#endregion-->
+    <!--#region  Borders/Margins-->
+    <!--  All  -->
+    <Thickness x:Key="AllExtraSmall">1</Thickness>
+    <Thickness x:Key="AllSmall">2</Thickness>
+    <Thickness x:Key="AllMedium">4</Thickness>
+    <Thickness x:Key="AllLarge">6</Thickness>
+    <Thickness x:Key="AllExtraLarge">8</Thickness>
+    <!--  Sides  -->
+    <Thickness x:Key="SideExtraSmall">1,0,1,0</Thickness>
+    <Thickness x:Key="SideSmall">2,0,2,0</Thickness>
+    <Thickness x:Key="SideMedium">4,0,4,0</Thickness>
+    <Thickness x:Key="SideLarge">6,0,6,0</Thickness>
+    <Thickness x:Key="SideExtraLarge">8,0,8,0</Thickness>
+    <!--  Top/Bottom  -->
+    <Thickness x:Key="TopBottomExtraSmall">0,1,0,1</Thickness>
+    <Thickness x:Key="TopBottomSmall">0,2,0,2</Thickness>
+    <Thickness x:Key="TopBottomMedium">0,4,0,4</Thickness>
+    <Thickness x:Key="TopBottomLarge">0,6,0,6</Thickness>
+    <Thickness x:Key="TopBottomExtraLarge">0,8,0,8</Thickness>
+    <!--  Top  -->
+    <Thickness x:Key="TopExtraSmall">0,1,0,0</Thickness>
+    <Thickness x:Key="TopSmall">0,2,0,0</Thickness>
+    <Thickness x:Key="TopMedium">0,4,0,0</Thickness>
+    <Thickness x:Key="TopLarge">0,6,0,0</Thickness>
+    <Thickness x:Key="TopExtraLarge">0,8,0,0</Thickness>
+    <!--  Bottom  -->
+    <Thickness x:Key="BottomExtraSmall">0,0,0,1</Thickness>
+    <Thickness x:Key="BottomSmall">0,0,0,2</Thickness>
+    <Thickness x:Key="BottomMedium">0,0,0,4</Thickness>
+    <Thickness x:Key="BottomLarge">0,0,0,6</Thickness>
+    <Thickness x:Key="BottomExtraLarge">0,0,0,8</Thickness>
+    <!--  Left  -->
+    <Thickness x:Key="LeftExtraSmall">1,0,0,0</Thickness>
+    <Thickness x:Key="LeftSmall">2,0,0,0</Thickness>
+    <Thickness x:Key="LeftMedium">4,0,0,0</Thickness>
+    <Thickness x:Key="LeftLarge">6,0,0,0</Thickness>
+    <Thickness x:Key="LeftExtraLarge">8,0,0,0</Thickness>
+    <!--  Right  -->
+    <Thickness x:Key="RightExtraSmall">0,0,1,0</Thickness>
+    <Thickness x:Key="RightSmall">0,0,2,0</Thickness>
+    <Thickness x:Key="RightMedium">0,0,4,0</Thickness>
+    <Thickness x:Key="RightLarge">0,0,6,0</Thickness>
+    <Thickness x:Key="RightExtraLarge">0,0,8,0</Thickness>
+    <!--#endregion-->
+</ResourceDictionary>

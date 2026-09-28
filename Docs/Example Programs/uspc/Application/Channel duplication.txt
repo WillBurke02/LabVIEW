@@ -1,0 +1,61 @@
+Socomate International;
+
+[Type]
+LANGUAGE_PCXUS
+
+VERSION = 1.0
+ 
+/* Select FRENCH or ENGLISH  */
+LANGUAGE = ENGLISH
+
+[FRENCH]
+Help_file = C:\uspc\Help\help_us.htm
+
+[Copies.vi]
+Title = Duplications de voies
+[Array of labels]
+Fichier source
+Carte(s) source
+Voie(s) source
+Carte(s) destination
+Voie(s) destination
+Copie du nom de la voie
+Attention ! Les changements de ce fichier ne prendront effet qu'au rechargement du fichier. 
+Carte
+Voie
+Détailles
+[Array of buttons]
+Aide
+Ok
+Abandon
+Détailles
+[End Copies.vi]
+
+[/FRENCH]
+
+[ENGLISH]
+Help_file = C:\uspc\Help\help_us.htm
+
+[Copies.vi]
+Title = Channel duplication
+[Array of labels]
+Source file
+Source board(s)
+Source channel(s)
+Destination board(s)
+Destination channel(s)
+Channel copy label
+WARNING! Changes to this file will take effect when you relaunch it.
+Board
+Channel
+Details
+[Array of buttons]
+HELP
+Ok
+Cancel
+Details
+[End Copies.vi]
+
+[/ENGLISH]
+
+

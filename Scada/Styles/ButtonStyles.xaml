@@ -1,0 +1,418 @@
+﻿<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:controls="clr-namespace:TimetTankSix.Controls">
+    <!--#region Buttons-->
+    <Style x:Key="DefaultButtonStyle" TargetType="Button">
+        <Setter Property="Background" Value="{StaticResource NavigationColor}" />
+        <Setter Property="BorderBrush" Value="{StaticResource NavigationBorderColor}" />
+        <Setter Property="BorderThickness" Value="{StaticResource AllSmall}" />
+        <Setter Property="Foreground" Value="{StaticResource PrimaryTextColor}" />
+        <Setter Property="FontFamily" Value="Segoe" />
+        <Setter Property="FontSize" Value="{StaticResource MediumFont}" />
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="Button">
+                    <Border
+                        x:Name="border"
+                        Background="{TemplateBinding Background}"
+                        BorderBrush="{TemplateBinding BorderBrush}"
+                        BorderThickness="{TemplateBinding BorderThickness}">
+                        <ContentPresenter
+                            x:Name="contentPresenter"
+                            Margin="{StaticResource AllMedium}"
+                            HorizontalAlignment="Center" VerticalAlignment="Center"
+                            Content="{TemplateBinding Content}"
+                            TextElement.Foreground="{TemplateBinding Foreground}" />
+                    </Border>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter TargetName="border" Property="BorderBrush" Value="{StaticResource EnabledColor}" />
+                        </Trigger>
+                        <Trigger Property="IsPressed" Value="True">
+                            <Setter TargetName="border" Property="BorderBrush" Value="{StaticResource EnabledColor}" />
+                            <Setter TargetName="border" Property="Background" Value="{StaticResource NavigationBorderColor}" />
+                            <Setter TargetName="contentPresenter" Property="TextElement.Foreground" Value="{StaticResource EnabledColor}" />
+                        </Trigger>
+                        <Trigger Property="IsEnabled" Value="False">
+                            <Setter TargetName="border" Property="Background" Value="{StaticResource NavigationDisabledColor}" />
+                            <Setter TargetName="border" Property="BorderBrush" Value="{StaticResource NavigationDisabledBorderColor}" />
+                            <Setter Property="Foreground" Value="{StaticResource InputDisabledTextColor}" />
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    <Style x:Key="TabNavigationButtonStyle" TargetType="Button">
+        <Setter Property="Background" Value="{StaticResource NavigationDisabledColor}" />
+        <Setter Property="BorderBrush" Value="{StaticResource NavigationDisabledBorderColor}" />
+        <Setter Property="BorderThickness" Value="{StaticResource AllSmall}" />
+        <Setter Property="Foreground" Value="{StaticResource ContrastTextColor}" />
+        <Setter Property="FontFamily" Value="Segoe" />
+        <Setter Property="FontSize" Value="{StaticResource MediumFont}" />
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="Button">
+                    <Border
+                        x:Name="border"
+                        Background="{TemplateBinding Background}"
+                        BorderBrush="{TemplateBinding BorderBrush}"
+                        BorderThickness="{TemplateBinding BorderThickness}">
+                        <ContentPresenter
+                            x:Name="contentPresenter"
+                            Margin="{StaticResource AllMedium}"
+                            HorizontalAlignment="Center" VerticalAlignment="Center"
+                            Content="{TemplateBinding Content}"
+                            TextElement.Foreground="{TemplateBinding Foreground}" />
+                    </Border>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter TargetName="border" Property="BorderBrush" Value="{StaticResource EnabledColor}" />
+                        </Trigger>
+                        <Trigger Property="IsPressed" Value="True">
+                            <Setter TargetName="border" Property="BorderBrush" Value="{StaticResource EnabledColor}" />
+                            <Setter TargetName="border" Property="Background" Value="{StaticResource NavigationBorderColor}" />
+                            <Setter TargetName="contentPresenter" Property="TextElement.Foreground" Value="{StaticResource EnabledColor}" />
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    <Style
+        x:Key="ActiveTabNavigationButtonStyle"
+        BasedOn="{StaticResource TabNavigationButtonStyle}"
+        TargetType="Button">
+        <Setter Property="Background" Value="{StaticResource EnabledColor}" />
+        <Setter Property="BorderBrush" Value="{StaticResource NavigationBorderColor}" />
+        <Setter Property="Foreground" Value="{StaticResource PrimaryTextColor}" />
+    </Style>
+    <Style x:Key="DefaultIconButtonStyle" TargetType="Button">
+        <Setter Property="Background" Value="{StaticResource NavigationColor}" />
+        <Setter Property="BorderBrush" Value="{StaticResource NavigationBorderColor}" />
+        <Setter Property="BorderThickness" Value="{StaticResource AllSmall}" />
+        <Setter Property="Foreground" Value="{StaticResource PrimaryTextColor}" />
+        <Setter Property="FontFamily" Value="Segoe Fluent Icons" />
+        <Setter Property="FontSize" Value="{StaticResource IconFontSize}" />
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="Button">
+                    <Border
+                        x:Name="border"
+                        Background="{TemplateBinding Background}"
+                        BorderBrush="{TemplateBinding BorderBrush}"
+                        BorderThickness="{TemplateBinding BorderThickness}">
+                        <ContentPresenter
+                            x:Name="contentPresenter" HorizontalAlignment="Center" VerticalAlignment="Center"
+                            Content="{TemplateBinding Content}"
+                            TextElement.Foreground="{TemplateBinding Foreground}" />
+                    </Border>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter TargetName="border" Property="BorderBrush" Value="{StaticResource EnabledColor}" />
+                        </Trigger>
+                        <Trigger Property="IsPressed" Value="True">
+                            <Setter TargetName="border" Property="BorderBrush" Value="{StaticResource EnabledColor}" />
+                            <Setter TargetName="border" Property="Background" Value="{StaticResource NavigationBorderColor}" />
+                            <Setter TargetName="contentPresenter" Property="TextElement.Foreground" Value="{StaticResource EnabledColor}" />
+                        </Trigger>
+                        <Trigger Property="IsEnabled" Value="False">
+                            <Setter TargetName="border" Property="Background" Value="{StaticResource NavigationDisabledColor}" />
+                            <Setter TargetName="border" Property="BorderBrush" Value="{StaticResource NavigationDisabledBorderColor}" />
+                            <Setter Property="Foreground" Value="{StaticResource InputDisabledTextColor}" />
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    <!--#region Multi Colored-->
+    <Style x:Key="BlueButtonStyle" TargetType="Button">
+        <Setter Property="BorderBrush" Value="{StaticResource ButtonBorderColour}" />
+        <Setter Property="Background" Value="{StaticResource BlueButtonColour}" />
+        <Setter Property="BorderThickness" Value="{StaticResource AllSmall}" />
+        <Setter Property="HorizontalAlignment" Value="Stretch" />
+        <Setter Property="VerticalAlignment" Value="Stretch" />
+        <Setter Property="Margin" Value="{StaticResource AllSmall}" />
+        <Setter Property="FontFamily" Value="Segoe" />
+        <Setter Property="Foreground" Value="{StaticResource ContrastTextColor}" />
+    </Style>
+    <!--  Green Button  -->
+    <Style x:Key="GreenButtonStyle" TargetType="Button">
+        <Setter Property="BorderBrush" Value="{StaticResource ButtonBorderColour}" />
+        <Setter Property="Background" Value="{StaticResource GreenButtonColour}" />
+        <Setter Property="BorderThickness" Value="{StaticResource AllSmall}" />
+        <Setter Property="HorizontalAlignment" Value="Stretch" />
+        <Setter Property="VerticalAlignment" Value="Stretch" />
+        <Setter Property="Foreground" Value="{StaticResource ContrastTextColor}" />
+        <Setter Property="Margin" Value="{StaticResource AllSmall}" />
+        <Setter Property="FontFamily" Value="Segoe" />
+    </Style>
+    <!--  Red Button  -->
+    <Style x:Key="RedButtonStyle" TargetType="Button">
+        <Setter Property="BorderBrush" Value="{StaticResource ButtonBorderColour}" />
+        <Setter Property="Background" Value="{StaticResource RedButtonColour}" />
+        <Setter Property="BorderThickness" Value="{StaticResource AllSmall}" />
+        <Setter Property="HorizontalAlignment" Value="Stretch" />
+        <Setter Property="VerticalAlignment" Value="Stretch" />
+        <Setter Property="Foreground" Value="{StaticResource ContrastTextColor}" />
+        <Setter Property="Margin" Value="{StaticResource AllSmall}" />
+        <Setter Property="FontFamily" Value="Segoe" />
+    </Style>
+    <!--#endregion-->
+    <!--#endregion-->
+    <!--#region Toggle Buttons-->
+    <Style x:Key="DefaultToggleButtonStyle" TargetType="ToggleButton">
+        <Setter Property="Background" Value="{StaticResource NavigationColor}" />
+        <Setter Property="BorderBrush" Value="{StaticResource NavigationBorderColor}" />
+        <Setter Property="BorderThickness" Value="{StaticResource AllSmall}" />
+        <Setter Property="Foreground" Value="{StaticResource PrimaryTextColor}" />
+        <Setter Property="FontFamily" Value="Segoe" />
+        <Setter Property="FontSize" Value="{StaticResource MediumFont}" />
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="ToggleButton">
+                    <Border
+                        x:Name="border"
+                        Background="{TemplateBinding Background}"
+                        BorderBrush="{TemplateBinding BorderBrush}"
+                        BorderThickness="{TemplateBinding BorderThickness}">
+                        <ContentPresenter
+                            x:Name="contentPresenter" HorizontalAlignment="Center" VerticalAlignment="Center"
+                            Content="{TemplateBinding Content}"
+                            TextElement.Foreground="{TemplateBinding Foreground}" />
+                    </Border>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter TargetName="border" Property="BorderBrush" Value="{StaticResource EnabledColor}" />
+                        </Trigger>
+                        <Trigger Property="IsPressed" Value="True">
+                            <Setter TargetName="border" Property="BorderBrush" Value="{StaticResource EnabledColor}" />
+                            <Setter TargetName="border" Property="Background" Value="{StaticResource NavigationBorderColor}" />
+                            <Setter TargetName="contentPresenter" Property="TextElement.Foreground" Value="{StaticResource EnabledColor}" />
+                        </Trigger>
+                        <Trigger Property="IsEnabled" Value="False">
+                            <Setter TargetName="border" Property="Background" Value="{StaticResource NavigationDisabledColor}" />
+                            <Setter TargetName="border" Property="BorderBrush" Value="{StaticResource NavigationDisabledBorderColor}" />
+                            <Setter Property="Foreground" Value="{StaticResource InputDisabledTextColor}" />
+                        </Trigger>
+                        <Trigger Property="IsChecked" Value="True">
+                            <Setter TargetName="border" Property="Background" Value="{StaticResource EnabledColor}" />
+                            <Setter TargetName="border" Property="BorderBrush" Value="{StaticResource NavigationBorderColor}" />
+                            <Setter TargetName="contentPresenter" Property="TextElement.Foreground" Value="{StaticResource PrimaryTextColor}" />
+                        </Trigger>
+                        <MultiTrigger>
+                            <MultiTrigger.Conditions>
+                                <Condition Property="IsChecked" Value="True" />
+                                <Condition Property="IsMouseOver" Value="True" />
+                            </MultiTrigger.Conditions>
+                            <Setter TargetName="border" Property="BorderBrush" Value="{StaticResource EnabledColor}" />
+                            <Setter TargetName="border" Property="Background" Value="{StaticResource NavigationBorderColor}" />
+                            <Setter TargetName="contentPresenter" Property="TextElement.Foreground" Value="{StaticResource EnabledColor}" />
+                        </MultiTrigger>
+                        <MultiTrigger>
+                            <MultiTrigger.Conditions>
+                                <Condition Property="IsChecked" Value="True" />
+                                <Condition Property="IsPressed" Value="True" />
+                            </MultiTrigger.Conditions>
+                            <Setter TargetName="border" Property="BorderBrush" Value="{StaticResource EnabledColor}" />
+                            <Setter TargetName="border" Property="Background" Value="{StaticResource NavigationBorderColor}" />
+                            <Setter TargetName="contentPresenter" Property="TextElement.Foreground" Value="{StaticResource EnabledColor}" />
+                        </MultiTrigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    <Style x:Key="CustomToggleButtonStyle" TargetType="Button">
+        <Setter Property="Margin" Value="2" />
+        <Setter Property="Background" Value="{StaticResource NavigationColor}" />
+        <Setter Property="Foreground" Value="{StaticResource PrimaryTextColor}" />
+        <Setter Property="FontSize" Value="{StaticResource MediumFont}" />
+        <Setter Property="BorderBrush" Value="{StaticResource NavigationBorderColor}" />
+        <Setter Property="BorderThickness" Value="{StaticResource AllSmall}" />
+        <Setter Property="HorizontalAlignment" Value="Stretch" />
+        <Setter Property="VerticalAlignment" Value="Stretch" />
+        <Setter Property="HorizontalContentAlignment" Value="Center" />
+        <Setter Property="VerticalContentAlignment" Value="Center" />
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="Button">
+                    <Border
+                        x:Name="border"
+                        Background="{TemplateBinding Background}"
+                        BorderBrush="{TemplateBinding BorderBrush}"
+                        BorderThickness="2">
+                        <ContentPresenter
+                            x:Name="contentPresenter"
+                            Margin="{TemplateBinding Padding}"
+                            HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
+                            VerticalAlignment="{TemplateBinding VerticalContentAlignment}"
+                            Content="{TemplateBinding Content}"
+                            TextElement.Foreground="{TemplateBinding Foreground}" />
+                    </Border>
+                    <ControlTemplate.Triggers>
+                        <!--  MouseOver  -->
+                        <MultiTrigger>
+                            <MultiTrigger.Conditions>
+                                <Condition Property="IsMouseOver" Value="True" />
+                                <Condition Property="IsPressed" Value="False" />
+                            </MultiTrigger.Conditions>
+                            <Setter TargetName="border" Property="Background" Value="{StaticResource EnabledColor}" />
+                        </MultiTrigger>
+                        <!--  IsPressed  -->
+                        <Trigger Property="IsPressed" Value="True">
+                            <Setter TargetName="border" Property="BorderBrush" Value="{StaticResource EnabledColor}" />
+                            <Setter TargetName="border" Property="Background" Value="{StaticResource NavigationBorderColor}" />
+                            <Setter TargetName="contentPresenter" Property="TextElement.Foreground" Value="{StaticResource EnabledColor}" />
+                        </Trigger>
+                        <!--  Active  -->
+                        <MultiDataTrigger>
+                            <MultiDataTrigger.Conditions>
+                                <Condition Binding="{Binding IsActive, RelativeSource={RelativeSource AncestorType=UserControl}}" Value="True" />
+                                <Condition Binding="{Binding IsMouseOver, RelativeSource={RelativeSource Self}}" Value="False" />
+                                <Condition Binding="{Binding IsPressed, RelativeSource={RelativeSource Self}}" Value="False" />
+                            </MultiDataTrigger.Conditions>
+                            <Setter TargetName="border" Property="Background" Value="{StaticResource EnabledColor}" />
+                            <Setter TargetName="border" Property="BorderBrush" Value="{StaticResource NavigationBorderColor}" />
+                            <Setter TargetName="contentPresenter" Property="TextElement.Foreground" Value="{StaticResource PrimaryTextColor}" />
+                        </MultiDataTrigger>
+                        <!--  Active + MouseOver  -->
+                        <MultiDataTrigger>
+                            <MultiDataTrigger.Conditions>
+                                <Condition Binding="{Binding IsActive, RelativeSource={RelativeSource AncestorType=UserControl}}" Value="True" />
+                                <Condition Binding="{Binding IsMouseOver, RelativeSource={RelativeSource Self}}" Value="True" />
+                                <Condition Binding="{Binding IsPressed, RelativeSource={RelativeSource Self}}" Value="False" />
+                            </MultiDataTrigger.Conditions>
+                            <Setter TargetName="border" Property="BorderBrush" Value="{StaticResource EnabledColor}" />
+                            <Setter TargetName="border" Property="Background" Value="{StaticResource NavigationBorderColor}" />
+                            <Setter TargetName="contentPresenter" Property="TextElement.Foreground" Value="{StaticResource EnabledColor}" />
+                        </MultiDataTrigger>
+                        <!--  Active + Pressed  -->
+                        <MultiDataTrigger>
+                            <MultiDataTrigger.Conditions>
+                                <Condition Binding="{Binding IsActive, RelativeSource={RelativeSource AncestorType=UserControl}}" Value="True" />
+                                <Condition Binding="{Binding IsPressed, RelativeSource={RelativeSource Self}}" Value="True" />
+                            </MultiDataTrigger.Conditions>
+                            <Setter TargetName="border" Property="BorderBrush" Value="{StaticResource EnabledColor}" />
+                            <Setter TargetName="border" Property="Background" Value="{StaticResource NavigationBorderColor}" />
+                            <Setter TargetName="contentPresenter" Property="TextElement.Foreground" Value="{StaticResource EnabledColor}" />
+                        </MultiDataTrigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    <!--#endregion-->
+    <!--#region Radio Buttons-->
+    <Style x:Key="RadioButtonStyle" TargetType="RadioButton">
+        <Setter Property="FontFamily" Value="Segoe" />
+        <Setter Property="Margin" Value="{StaticResource AllSmall}" />
+        <Setter Property="HorizontalAlignment" Value="Stretch" />
+        <Setter Property="VerticalAlignment" Value="Stretch" />
+        <Setter Property="BorderThickness" Value="{StaticResource AllExtraSmall}" />
+        <Setter Property="Padding" Value="10,5" />
+        <Setter Property="FontSize" Value="{StaticResource MediumFont}" />
+        <Setter Property="Foreground" Value="{StaticResource PrimaryTextColor}" />
+        <Setter Property="Background" Value="{StaticResource NavigationBorderColor}" />
+        <Setter Property="BorderBrush" Value="{StaticResource ButtonBorderColour}" />
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="RadioButton">
+                    <Grid>
+                        <Border
+                            x:Name="Border"
+                            Background="{TemplateBinding Background}"
+                            BorderBrush="{TemplateBinding BorderBrush}"
+                            BorderThickness="{TemplateBinding BorderThickness}">
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="Auto" />
+                                    <ColumnDefinition Width="*" />
+                                </Grid.ColumnDefinitions>
+                                <Ellipse
+                                    x:Name="RadioOuterEllipse" Width="16" Height="16"
+                                    Margin="5,0,0,0" Fill="Transparent"
+                                    Stroke="{StaticResource ButtonBorderColour}"
+                                    StrokeThickness="2" />
+                                <Ellipse
+                                    x:Name="RadioInnerEllipse" Width="14" Height="14"
+                                    Margin="5,0,0,0"
+                                    Fill="{StaticResource NavigationBorderColor}"
+                                    Opacity="0" />
+                                <ContentPresenter
+                                    Grid.Column="1"
+                                    Margin="{TemplateBinding Padding}"
+                                    HorizontalAlignment="Left" VerticalAlignment="Center" RecognizesAccessKey="True" />
+                            </Grid>
+                        </Border>
+                    </Grid>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsChecked" Value="true">
+                            <Setter TargetName="Border" Property="Background" Value="{StaticResource EnabledColor}" />
+                            <Setter TargetName="RadioInnerEllipse" Property="Opacity" Value="1" />
+                            <Setter TargetName="RadioInnerEllipse" Property="Fill" Value="{StaticResource GreenButtonColour}" />
+                        </Trigger>
+                        <Trigger Property="IsMouseOver" Value="true">
+                            <Setter TargetName="Border" Property="BorderBrush" Value="{StaticResource EnabledColor}" />
+                        </Trigger>
+                        <Trigger Property="IsEnabled" Value="false">
+                            <Setter TargetName="Border" Property="Background" Value="{StaticResource InputDisabledTextColor}" />
+                            <Setter TargetName="RadioOuterEllipse" Property="Stroke" Value="{StaticResource InputDisabledColor}" />
+                            <Setter Property="Foreground" Value="{StaticResource InputDisabledTextColor}" />
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    <!--#endregion-->
+    <!--#region Button Styles for Test Page-->
+
+    <!--  Cycle/Free Run Toggle Button Style  -->
+    <Style
+        x:Key="CycleFreeRunButtonStyle"
+        BasedOn="{StaticResource BlueButtonStyle}"
+        TargetType="Button">
+        <Style.Triggers>
+            <DataTrigger Binding="{Binding IsCycleRunEnabled}" Value="False">
+                <Setter Property="Background" Value="{StaticResource LightBlueButtonColour}" />
+                <Setter Property="Foreground" Value="White" />
+            </DataTrigger>
+        </Style.Triggers>
+    </Style>
+
+    <!--  Forward Direction Button Style  -->
+    <Style
+        x:Key="ForwardDirectionButtonStyle"
+        BasedOn="{StaticResource BlueButtonStyle}"
+        TargetType="Button">
+        <Style.Triggers>
+            <DataTrigger Binding="{Binding IsClockwise}" Value="True">
+                <Setter Property="Background" Value="{StaticResource ActiveGreen}" />
+                <Setter Property="Foreground" Value="White" />
+            </DataTrigger>
+            <DataTrigger Binding="{Binding IsClockwise}" Value="False">
+                <Setter Property="Background" Value="{StaticResource DarkGray}" />
+                <Setter Property="Foreground" Value="{StaticResource MediumGray}" />
+            </DataTrigger>
+        </Style.Triggers>
+    </Style>
+
+    <!--  Reverse Direction Button Style  -->
+    <Style
+        x:Key="ReverseDirectionButtonStyle"
+        BasedOn="{StaticResource BlueButtonStyle}"
+        TargetType="Button">
+        <Style.Triggers>
+            <DataTrigger Binding="{Binding IsClockwise}" Value="False">
+                <Setter Property="Background" Value="{StaticResource ActiveGreen}" />
+                <Setter Property="Foreground" Value="White" />
+            </DataTrigger>
+            <DataTrigger Binding="{Binding IsClockwise}" Value="True">
+                <Setter Property="Background" Value="{StaticResource DarkGray}" />
+                <Setter Property="Foreground" Value="{StaticResource MediumGray}" />
+            </DataTrigger>
+        </Style.Triggers>
+    </Style>
+    <!--#endregion-->
+</ResourceDictionary>

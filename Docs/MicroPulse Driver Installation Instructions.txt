@@ -1,0 +1,7 @@
+The MicroPulse folder should be unzipped into you instr.lib folder, e.g. C:\Program Files\National Instruments\LabVIEW 2015\instr.lib.
+
+The driver should then be available through your programming palette under "Instrument I/O>Instr Drivers".
+
+Example files are provided in the "instr.lib\Micropulse\Examples" folder.
+
+ 

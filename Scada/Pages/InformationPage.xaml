@@ -1,0 +1,299 @@
+﻿<Page
+    x:Class="TimetTankSix.Pages.InformationPage" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:controls="clr-namespace:TimetTankSix.Controls" xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:local="clr-namespace:TimetTankSix.Pages"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" d:DesignHeight="1080" d:DesignWidth="1920"
+    mc:Ignorable="d">
+    <Border Style="{StaticResource PageBorderStyle}">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <Border
+                Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3"
+                Style="{StaticResource TabStyle}">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="*" />
+                    </Grid.RowDefinitions>
+                    <TextBlock
+                        Grid.Row="0"
+                        Style="{StaticResource HeaderTextStyle}"
+                        Text="Transducer Information" />
+                    <Separator Grid.Row="1" Style="{StaticResource SeparatorStyle}" />
+                    <DataGrid Grid.Row="2" HeadersVisibility="Column">
+                        <DataGrid.Columns>
+                            <DataGridTextColumn Header="Enabled" IsReadOnly="True" />
+                            <DataGridTextColumn Header="Serial Number" IsReadOnly="True" />
+                            <DataGridTextColumn Header="Focal Length (mm)" IsReadOnly="True" />
+                            <DataGridTextColumn Header="Beam X (mm)" IsReadOnly="True" />
+                            <DataGridTextColumn Header="Measured Beam X (mm)" IsReadOnly="True" />
+                            <DataGridTextColumn Header="Frequency (Hz)" IsReadOnly="True" />
+                            <DataGridTextColumn Header="Diameter (mm)" IsReadOnly="True" />
+                            <DataGridTextColumn Header="Water Path (mm)" IsReadOnly="True" />
+                            <DataGridTextColumn Header="Inspection Zone" IsReadOnly="True" />
+                            <DataGridTextColumn Header="SNR (dB)" IsReadOnly="True" />
+                            <DataGridTextColumn Header="Alarm Level" IsReadOnly="True" />
+                        </DataGrid.Columns>
+                    </DataGrid>
+                </Grid>
+            </Border>
+            <Border
+                Grid.Row="1" Grid.Column="0"
+                Style="{StaticResource TabStyle}">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="*" />
+                    </Grid.RowDefinitions>
+                    <TextBlock
+                        Grid.Row="0"
+                        Style="{StaticResource HeaderTextStyle}"
+                        Text="Scan Settings" />
+                    <Separator Grid.Row="1" Style="{StaticResource SeparatorStyle}" />
+                    <Grid Grid.Row="2">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto" />
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*" />
+                            <RowDefinition Height="*" />
+                            <RowDefinition Height="*" />
+                            <RowDefinition Height="*" />
+                            <RowDefinition Height="*" />
+                            <RowDefinition Height="*" />
+                            <RowDefinition Height="*" />
+                            <RowDefinition Height="*" />
+                        </Grid.RowDefinitions>
+                        <TextBlock
+                            Grid.Row="0" Grid.Column="0"
+                            Style="{StaticResource SubHeaderTextStyle}"
+                            Text="Selected Beam X" />
+                        <controls:NumericInputTextBox Grid.Row="0" Grid.Column="1" />
+                        <TextBlock
+                            Grid.Row="1" Grid.Column="0"
+                            Style="{StaticResource SubHeaderTextStyle}"
+                            Text="Enabled Channels" />
+                        <controls:NumericInputTextBox Grid.Row="1" Grid.Column="1" />
+                        <TextBlock
+                            Grid.Row="2" Grid.Column="0"
+                            Style="{StaticResource SubHeaderTextStyle}"
+                            Text="Scan Data Rate" />
+                        <controls:NumericInputTextBox Grid.Row="2" Grid.Column="1" />
+                        <TextBlock
+                            Grid.Row="3" Grid.Column="0"
+                            Style="{StaticResource SubHeaderTextStyle}"
+                            Text="Scan Resolution" />
+                        <controls:NumericInputTextBox Grid.Row="3" Grid.Column="1" />
+                        <TextBlock
+                            Grid.Row="4" Grid.Column="0"
+                            Style="{StaticResource SubHeaderTextStyle}"
+                            Text="Scan Speed (deg/s)" />
+                        <controls:NumericInputTextBox Grid.Row="4" Grid.Column="1" />
+                        <TextBlock
+                            Grid.Row="5" Grid.Column="0"
+                            Style="{StaticResource SubHeaderTextStyle}"
+                            Text="Scan RPM" />
+                        <controls:NumericInputTextBox Grid.Row="5" Grid.Column="1" />
+                        <TextBlock
+                            Grid.Row="6" Grid.Column="0"
+                            Style="{StaticResource SubHeaderTextStyle}"
+                            Text="Pulses Per Revolution" />
+                        <controls:NumericInputTextBox Grid.Row="6" Grid.Column="1" />
+                        <Button
+                            Grid.Row="7" Grid.Column="0" Grid.ColumnSpan="2"
+                            Content="Calculate Scan"
+                            Style="{StaticResource DefaultButtonStyle}" />
+                    </Grid>
+                </Grid>
+            </Border>
+            <Border
+                Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2"
+                Style="{StaticResource TabStyle}">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="*" />
+                    </Grid.RowDefinitions>
+                    <TextBlock
+                        Grid.Row="0"
+                        Style="{StaticResource HeaderTextStyle}"
+                        Text="Scan Information" />
+                    <Separator Grid.Row="1" Style="{StaticResource SeparatorStyle}" />
+                    <Grid Grid.Row="2">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+                        <Grid Grid.Column="0">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="Auto" />
+                                <ColumnDefinition Width="*" />
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="*" />
+                                <RowDefinition Height="*" />
+                                <RowDefinition Height="*" />
+                                <RowDefinition Height="*" />
+                                <RowDefinition Height="*" />
+                                <RowDefinition Height="*" />
+                                <RowDefinition Height="*" />
+                                <RowDefinition Height="*" />
+                                <RowDefinition Height="*" />
+                            </Grid.RowDefinitions>
+                            <TextBlock
+                                Grid.Row="0" Grid.Column="0"
+                                Style="{StaticResource SubHeaderTextStyle}"
+                                Text="Bar Alloy" />
+                            <TextBox
+                                Grid.Row="0" Grid.Column="1"
+                                Style="{StaticResource AccountInputBoxStyle}" />
+                            <TextBlock
+                                Grid.Row="1" Grid.Column="0"
+                                Style="{StaticResource SubHeaderTextStyle}"
+                                Text="Process Order" />
+                            <TextBox
+                                Grid.Row="1" Grid.Column="1"
+                                Style="{StaticResource AccountInputBoxStyle}" />
+                            <TextBlock
+                                Grid.Row="2" Grid.Column="0"
+                                Style="{StaticResource SubHeaderTextStyle}"
+                                Text="Batch Number" />
+                            <TextBox
+                                Grid.Row="2" Grid.Column="1"
+                                Style="{StaticResource AccountInputBoxStyle}" />
+                            <TextBlock
+                                Grid.Row="3" Grid.Column="0"
+                                Style="{StaticResource SubHeaderTextStyle}"
+                                Text="Class" />
+                            <TextBox
+                                Grid.Row="3" Grid.Column="1"
+                                Style="{StaticResource AccountInputBoxStyle}" />
+                            <TextBlock
+                                Grid.Row="4" Grid.Column="0"
+                                Style="{StaticResource SubHeaderTextStyle}"
+                                Text="Billet Diameter (mm)" />
+                            <controls:NumericInputTextBox Grid.Row="4" Grid.Column="1" />
+                            <TextBlock
+                                Grid.Row="5" Grid.Column="0"
+                                Style="{StaticResource SubHeaderTextStyle}"
+                                Text="Billet Length (mm)" />
+                            <controls:NumericInputTextBox Grid.Row="5" Grid.Column="1" />
+                            <TextBlock
+                                Grid.Row="6" Grid.Column="0"
+                                Style="{StaticResource SubHeaderTextStyle}"
+                                Text="Route" />
+                            <TextBox
+                                Grid.Row="6" Grid.Column="1"
+                                Style="{StaticResource AccountInputBoxStyle}" />
+                            <TextBlock
+                                Grid.Row="7" Grid.Column="0"
+                                Style="{StaticResource SubHeaderTextStyle}"
+                                Text="Standard ID" />
+                            <TextBox
+                                Grid.Row="7" Grid.Column="1"
+                                Style="{StaticResource AccountInputBoxStyle}" />
+                            <TextBlock
+                                Grid.Row="8" Grid.Column="0"
+                                Style="{StaticResource SubHeaderTextStyle}"
+                                Text="Bar ID" />
+                            <TextBox
+                                Grid.Row="8" Grid.Column="1"
+                                Style="{StaticResource AccountInputBoxStyle}" />
+                        </Grid>
+                        <Grid Grid.Column="1">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="Auto" />
+                                <ColumnDefinition Width="*" />
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="*" />
+                                <RowDefinition Height="*" />
+                                <RowDefinition Height="*" />
+                                <RowDefinition Height="*" />
+                                <RowDefinition Height="*" />
+                                <RowDefinition Height="*" />
+                                <RowDefinition Height="*" />
+                                <RowDefinition Height="*" />
+                                <RowDefinition Height="*" />
+                            </Grid.RowDefinitions>
+                            <TextBlock
+                                Grid.Row="0" Grid.Column="0"
+                                Style="{StaticResource SubHeaderTextStyle}"
+                                Text="End At Start" />
+                            <TextBox
+                                Grid.Row="0" Grid.Column="1"
+                                Style="{StaticResource AccountInputBoxStyle}" />
+                            <TextBlock
+                                Grid.Row="1" Grid.Column="0"
+                                Style="{StaticResource SubHeaderTextStyle}"
+                                Text="Customer" />
+                            <TextBox
+                                Grid.Row="1" Grid.Column="1"
+                                Style="{StaticResource AccountInputBoxStyle}" />
+                            <TextBlock
+                                Grid.Row="2" Grid.Column="0"
+                                Style="{StaticResource SubHeaderTextStyle}"
+                                Text="UT Specification" />
+                            <TextBox
+                                Grid.Row="2" Grid.Column="1"
+                                Style="{StaticResource AccountInputBoxStyle}" />
+                            <TextBlock
+                                Grid.Row="3" Grid.Column="0"
+                                Style="{StaticResource SubHeaderTextStyle}"
+                                Text="UT Internal Procedure" />
+                            <TextBox
+                                Grid.Row="3" Grid.Column="1"
+                                Style="{StaticResource AccountInputBoxStyle}" />
+                            <TextBlock
+                                Grid.Row="4" Grid.Column="0"
+                                Style="{StaticResource SubHeaderTextStyle}"
+                                Text="Operator" />
+                            <TextBox
+                                Grid.Row="4" Grid.Column="1"
+                                Style="{StaticResource AccountInputBoxStyle}" />
+                            <TextBlock
+                                Grid.Row="5" Grid.Column="0"
+                                Style="{StaticResource SubHeaderTextStyle}"
+                                Text="UT Level" />
+                            <TextBox
+                                Grid.Row="5" Grid.Column="1"
+                                Style="{StaticResource AccountInputBoxStyle}" />
+                            <TextBlock
+                                Grid.Row="6" Grid.Column="0"
+                                Style="{StaticResource SubHeaderTextStyle}"
+                                Text="Date" />
+                            <TextBox
+                                Grid.Row="6" Grid.Column="1"
+                                Style="{StaticResource AccountInputBoxStyle}" />
+                            <TextBlock
+                                Grid.Row="7" Grid.Column="0"
+                                Style="{StaticResource SubHeaderTextStyle}"
+                                Text="Inspection Index (dB)" />
+                            <TextBox
+                                Grid.Row="7" Grid.Column="1"
+                                Style="{StaticResource AccountInputBoxStyle}" />
+                            <TextBlock
+                                Grid.Row="8" Grid.Column="0"
+                                Style="{StaticResource SubHeaderTextStyle}"
+                                Text="Scan Name" />
+                            <TextBox
+                                Grid.Row="8" Grid.Column="1"
+                                Style="{StaticResource AccountInputBoxStyle}" />
+                        </Grid>
+                    </Grid>
+                </Grid>
+            </Border>
+        </Grid>
+    </Border>
+</Page>

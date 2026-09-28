@@ -1,0 +1,1312 @@
+Socomate International;
+
+[Type]
+LANGUAGE_PCXUS
+
+VERSION = 8.0
+ 
+/* Select FRENCH or ENGLISH  */
+LANGUAGE = ENGLISH
+
+[FRENCH]
+Help_file = C:\uspc\Help\help_us.htm
+OEM_picture=C:\uspc\config\socomate.bmp
+OEM_address_picture=C:\uspc\config\socomate address.bmp
+[DLL messages]
+MSG_Alarm_Title=Alarme sur la carte
+MSG_ALARM_BOOT=Erreur lors du BOOT.
+MSG_ALARM_MEMORY_OVERFLOW_ERROR=Pertes de données.
+MSG_ALARM_EXTERNAL_TRIGGER_ERROR=Synchro. externe trop rapide.
+MSG_ALARM_POWER_ERROR=Problème HT.<CR_LF>La récurrence des tirs ultrasons est trop importante<CR_LF>par rapport à la fréquence d'émission.<CR_LF>Ou il y a un court circuit entre l'émetteur et le récepteur.
+MSG_ALARM_UNKNOWED=Alarme inconnue !
+MSG_CERTIFICAT_TITLE=Message d'alerte
+MSG_CERTIFICAT_1=Le certificat de conformité de la carte %d (SN %d) est expiré depuis %d jour(s).
+MSG_CERTIFICAT_2=Le certificat de conformité de la carte %d (SN %d) arrive à expiration dans %d jour(s).
+MSG_CERTIFICAT_3=Ce message disparaîtera dans 5 secondes...
+[PCXUS.vi]
+Title = USPC
+[Menu_name]
+_Fichier
+_Ouvrir
+-
+_Sauver
+Sauver _comme
+-
+_Dupliquer une voie
+-
+_Imprimer
+-
+_Derniers fichiers
+-
+_Quitter
+_Affichage multi A-scans
+_Visualisation multi A-scans
+-
+_Configuration
+A propos de l'USPC
+[Menu_shortcut]
+O
+
+S
+
+
+
+
+P
+
+
+
+Q
+[Array of buttons]
+Emetteur
+Récepteur
+Affichage
+Gate IF
+Gate 1
+Gate 2
+E/S
+Gel AScan
+DAC
+Courbe
+RAZ
+STOP
+Carte
+Test
+Correct. dyn.
+Ajouter
+Taille du curseur (%)
+non utilisé
+non utilisé
+Mesure...
+Alarme
+Divers
+Tps de vol/Ep.
+Amplitude
+[Array of labels]
+local
+remote
+DAC
+1.Amp. (%)
+(Non utilisé)
+2.Amp. (%)
+(Non utilisé)
+Mode
+Synchro. interne
+Synchro. externe
+Amplitude
+125 V
+250 V
+Fréquence (MHz)
+Décalage (µs)
+Durée (µs)
+Mode
+écho
+transmission
+Atténuateur d'entrée
+inactif
+actif
+Atténuateur 20 dB
+inactif
+actif
+Filtre
+500 KHz
+1 MHz
+2.25 MHz
+5 MHz
+10 MHz
+15 MHz
+large bande
+Courbe DAC
+Gain 1
+Gain 2
+inactif
+actif
+Mode de synchronisation
+Emission
+Gate 1
+Gate 2
+Idem Gate 1
+idem Gate 2
+Type de vidéo
+HF
+alternances pos.
+alternances nég.
+double alternances
+Mode d'affichage
+Point maximum
+A la volé
+Retard (µs)
+Durée d'affichage (µs)
+Célérité matière (m/s)
+Rejet (%)
+Affiche le rejet
+Synchronisation
+Non actif
+Emission
+Mode
+Apparition
+Disparition
+(Non utilisé)
+(Non utilisé)
+(Non utilisé)
+Détection sur la phase
+Phase positive
+Phase négative
+Double alternances
+HF
+Position (µs)
+Durée (µs)
+Niveau (%)
+Filtre alarme
+Synchronisation
+Non actif
+Emission
+Echo d'interface
+-
+Mode
+Apparition
+Disparition
+Détection
+Plus grand écho
+1er écho
+Détection sur la phase
+Phase positive
+Phase négative
+Double alternances
+HF
+Position (µs)
+Durée (µs)
+Niveau (%)
+Filtre alarme
+Synchronisation
+Non actif
+Emission
+Echo d'interface
+Echo Gate 1
+Mode
+Apparition
+Disparition
+Détection
+Plus grand écho
+1er écho
+Détection sur la phase
+Phase positive
+Phase négative
+Double alternances
+HF
+Position (µs)
+Durée (µs)
+Niveau (%)
+Filtre alarme
+Affectation des broches
+Temps de maintient des sorties (ms)
+Maxi. (µs)
+Mini. (µs)
+Filtre
+Nb. points
+Nb. points
+Maxi (µs)
+Maxi. (µs)
+Mini. (µs)
+Alarme (%)
+Echo multiple
+Calibration (µs)
+Célérité (m/s)
+Zéro (µs)
+Dyn. (µs)
+Nom de la carte
+Chargement des fichiers de configuration...
+Chargement du fichier de réglage ultrasons...
+Origine mesure
+Seuil
+Zéro
+Crête
+Zéro affichage (µs)
+N.
+Nb. points
+Traitements
+Aucun
+Ep.
+Nom de la voie
+ATTENTION! Le paramètre %s est commun aux voies 1 à 8
+Sortie ana. 0-5 V
+Sortie ana. 0-5 V
+Sortie ana. 0-5 V
+Sortie ana. 0-5 V
+Entrée TTL
+Entrée TTL inutilisée
+Sortie TTL
+Sortie TTL
+Sortie TTL
+Sortie TTL
+Sortie TTL
+Sortie TTL
+Masse
+Masse
+Sortie TTL
++ 5 V
+Sortie TTL
+Sortie TTL
+Sortie TTL
+Sortie TTL
+Sortie TTL
+Entrée TTL
+Sortie ana. 0-5 V
+Sortie ana. 0-5 V
+Sortie ana. 0-5 V
+Sortie ana. 0-5 V
+Fréq. globale (KHz)
+Id. Amp.
+Seuil du filtre alarme (db)
+Diviseur synchro. externe
+Matière ()
+Interface ()
+Matière
+Interface
+Célérité pour la Gate IF
+Célérité pour le retard
+Célérité Interface (m/s)
+Param. communs de mesure 
+Traitement spécifique en ligne
+Paramètres communs de sortie
+Limites du trt.
+Couplage
+Déviation
+Moyenne
+Alarme
+Sortie ana.
+(Non utilisé)
+Résolution
+IF.Bru. (µs)
+IF.Ep. (µs)
+1.Brute (µs)
+1.Ep. (µs)
+2.Brute (µs)
+2.Ep. (µs)
+Rampe d'ajust.
+dB/µs
+Déb. Gate IF
+Carte
+Canal
+Début cycle:
+Fin cycle:
+Affichage large
+[Errors]
+[Array of titles]
+Erreur
+Erreur fichier
+Avertissement
+Erreur DAC
+Erreur pendant la configuration
+[Array of error messages]
+-
+-
+-
+Le fichier que vous avez choisi ne contient pas de réglage ultrasons !
+Le fichier que vous avez choisi existe déjà ! Voulez vous l'écraser ?
+Les réglages ont été modifiés. Voulez vous enregistrer ces modifications ?
+La pente du DAC est trop importante (supérieur à 10 dB/µs)
+La position saisie existe déjà !
+La recherche automatique du gain de correction a échoué.
+Impossible de charger le fichier. Voulez vous essayer un autre fichier ?
+Les réglages n'ont pas pu être sauvés dans le fichier!
+Les points du DAC vont être supprimés!
+Numéro série introuble ou pilote introuvable ou erreur d'accès au pilote.
+Accès au fichier PCXUS.TXT impossible.
+Accès au fichier PCXUS.INI impossible.
+Erreur pendant le Reset de la carte %d.
+Erreur pendant le téléchargement du Ascan de la carte %d.
+Erreur pendant le téléchargement du Flex de la carte %d.
+Erreur pendant le téléchargement des Gates de la carte %d.
+Erreur pendant la lecture des informations d'étalonnage de la carte %d.
+Port série COM%d introuvable ou occupé.
+Carte MUX/RCPP introuvable sur le port COM%d.
+Erreur de communication avec la carte MUX/RCPP sur le port COM%d.
+Le dernier fichier utilisé (%s) introuvable ou incorrect.\nVeuillez, s'il vous plait, sélectionner un autre fichier.
+Erreur de configuration\nLa carte %d doit être utilisée avec une carte RCPP ou MUX.
+Erreur de configuration\nLa carte %d ne peut pas être utilisée avec une carte RCPP.
+Erreur de configuration\nLa carte %d ne peut pas être utilisée avec une carte RCPP ou MUX.
+Erreur de configuration\nLa carte %d ne peut pas être utilisée avec une carte MUX version haute.
+Erreur de configuration\nLa carte MUX reliée à la carte %d n'est pas une carte MUX version haute.
+Erreur de configuration\nLa carte %d n'a pas les ressources suffisantes pour acquérir des Ascans.
+Erreur de configuration\nLa carte %d doit être utilisée avec une carte MUX.
+Erreur. Une seule carte USPC-3200P peut être installée par ordinateur.
+Erreur de configuration\nLa carte %d ne permet d'utiliser un DAC.
+Erreur. Le nombre de carte est insuffisant (Ex: Un package PCMUX3208 nécessite deux cartes).
+[End PCXUS.vi]
+
+[Alarms diagnostic.vi]
+Title = Liste des alarmes
+[Array of buttons]
+Acquitter
+Quitter
+[End Alarms diagnostic.vi]
+
+[DAC point.vi]
+Title = Points DAC
+[Array of buttons]
+Ajouter
+Remplacer
+Effacer
+Abandon
+[Array of labels]
+Gain
+Position (µs)
+[Errors]
+[Array of titles]
+Erreur DAC
+[Array of error messages]
+La pente du DAC est trop importante (supérieur à 40 dB/µs)
+La position saisie existe déjà !
+[End DAC point.vi]
+
+[Set a parameter.vi]
+[Errors]
+[Array of titles]
+Avertissement !
+[Array of error messages]
+L'amplitude de l'émission a été limité pour protéger l'émetteur.
+La fréquence de l'émission a été limité pour protéger l'émetteur.
+La récurrence de l'émission a été limité pour protéger l'émetteur.
+La récurrence de l'émission a été limité pour être compatible avec les positions/durées des Gates et/ou l'affichage.
+L'échelle a été limité pour être compatible avec les positions/durées des Gates et/ou la fréq. de récurrence.
+Le retard a été limité pour être compatible avec les positions/durées des Gates et/ou la fréq. de récurrence.
+La source de synchro. n'a pas été modifié pour être compatible avec les positions/durées des Gates et/ou la fréq. de récurrence.
+La source de synchro. n'a pas été modifié pour être compatible avec les positions/durées des Gates et/ou la fréq. de récurrence.
+La postion a été limité pour être compatible avec les positions/durées des Gates et/ou la fréq. de récurrence.
+La durée a été limité pour être compatible avec les positions/durées des Gates et/ou la fréq. de récurrence.
+La source de synchro. n'a pas été modifié pour être compatible avec les positions des Gates et/ou la fréq. de récurrence.
+La postion a été limité pour être compatible avec les positions/durées des Gates et/ou la fréq. de récurrence.
+La durée a été limité pour être compatible avec les positions/durées des Gates et/ou la fréq. de récurrence.
+La source de synchro. n'a pas été modifié pour être compatible avec les positions des Gates et/ou la fréq. de récurrence.
+La postion a été limité pour être compatible avec les positions/durées des Gates et/ou la fréq. de récurrence.
+La durée a été limité pour être compatible avec les positions/durées des Gates et/ou la fréq. de récurrence.
+La distance entre un ou plusieurs points DAC est trop courte.
+La pente entre un ou plusieurs points DAC est trop forte (+/-40 dB/µs).
+-
+Le filter a été limité pour être compatible avec les positions/durées des Gates et/ou la fréq. de récurrence et/ou les paramétres TOF/WT.
+La source de synchro. n'a pas été modifié pour être compatible avec les positions des Gates et/ou la fréq. de récurrence.
+La postion a été limité pour être compatible avec les positions/durées des Gates et/ou la fréq. de récurrence.
+La durée a été limité pour être compatible avec les positions/durées des Gates et/ou la fréq. de récurrence.
+Une carte en mode ESCLAVE fonctionne uniquement avec un signal de synchronisation externe.
+Le mode de détection n'a pas été modifié pour être compatible l'Origine mesure.
+Le mode d'Origine mesure n'a pas été modifié pour être compatible le mode de Détection.
+Le mode de détection n'a pas été modifié pour être compatible l'Origine mesure.
+Le mode d'Origine mesure n'a pas été modifié pour être compatible le mode de Détection.
+Le PRF est trop rapide pour autoriser le traitement "Epaisseur".
+La récurrence de l'émission a été limité pour permettre les traitements "Epaisseur".
+[End Set a parameter.vi]
+
+[Pin assignment.vi]
+Title = Affectation des broches
+[Array of buttons]
+Stop
+[Array of labels]
+Attention !
+Les changement prendront effet après un rechargement du fichier.
+Broche n°
+[End Pin assignment.vi]
+
+[About.vi]
+Title = A propos de USPC
+[Array of labels]
+Version DLL
+Version driver
+Num. série
+Config. 1
+Config. 2
+Config. 3
+Mode Maître/Esclave
+Maître
+Esclave
+Maître synchronisé
+Esclave synchronisé
+Maître (link)
+Résolution
+Auto
+Basse
+Haute
+N*1/F N=
+Version du matériel
+Package
+[End About.vi]
+
+[Print.vi]
+Title = Impression
+[Array of buttons]
+F1 Retour
+F2 Continuer
+Echap Annuler
+F2 Imprimer...
+[Array of labels]
+Destination
+Imprimante
+BMP
+JPEG
+PNG
+Contenu
+Ascan
+Paramétres courrant
+Tous les paramétres
+[End Print.vi]
+
+[Print ascan.vi]
+Title = Impression Ascan
+[Array of buttons]
+F2 Imprimer...
+[Array of labels]
+Commentaire
+[End Print ascan.vi]
+
+[Print Ascan to (bmp or jpeg or png) file.vi]
+Title = Envoi vers un fichier bmp/jpeg/png
+[Array of buttons]
+F1 Sauve
+Echap Annuler
+[Array of labels]
+Qualité (%)
+Compression
+[Errors]
+[Array of titles]
+Erreur
+[Array of error messages]
+La sauvegarde du fichier a échoué!
+[End Print Ascan to (bmp or jpeg or png) file.vi]
+
+[Pins]
+[Analog output]
+1999; Sortie ana. inutilisée
+1000; Amplitude Gate 1
+1001; Amplitude Gate 2
+1002; Distance Gate 1
+1003; Distance Gate 2
+1004; Couplage Gate 1
+1005; Couplage Gate 2
+1006; Extension Gate 1
+1007; Extension Gate 2
+1008; Distance Gate IF
+1009; Extension Gate IF
+1010; Extension Gate IF
+[Output]
+2999; Sortie TTL inutilisée
+2000; Carte prête
+2001; TOR Gate IF
+2002; TOR Gate 1
+2003; TOR Gate 2
+2004; Alarme mini. Gate 1
+2005; Alarme mini. Gate 2
+2006; Alarme maxi. Gate 1
+2007; Alarme maxi. Gate 2
+2008; Alarme couplage Gate 1
+2009; Alarme couplage Gate 2
+2010; Alarme mini. Gate IF
+2011; Alarme maxi. Gate IF
+2012; Alarme couplage Gate IF
+[Input]
+3000; Entrée TTL inutilisée
+[No reallocable]
+4000; Masse
+4001; +5 V
+4002; Sortie synchro.
+4003; Synchro. externe
+4004; Start out
+4005; Start in
+4006; PRF link
+[End pins]
+
+[Multi-ascans Configuration window.vi]
+Title = Liste des configurations de la fenêtre Multi-ascans
+[Array of labels]
+Nom
+Fichier
+Ascans #
+Liste (Carte:Canal)
+[Array of buttons]
+Nouv./Modif.
+Efface
+OK
+Abandon
+[End Multi-ascans Configuration window.vi]
+
+[Multi-ascans New or Modified screen.vi]
+Title = Modification ou nouvelle fenêtre Multi-ascans
+[Array of labels]
+Nom
+Ascan
+Carte
+Canal
+[Array of buttons]
+OK
+Abandon
+[End Multi-ascans New or Modified screen.vi]
+
+[Multi-ascans.vi]
+Title = Multi-ascans
+[Array of labels]
+Mode d'affichage :
+indéfini
+[Array of buttons]
+STOP
+[Errors]
+[Array of titles]
+Erreur
+[Array of error messages]
+Aucun fichier de configuration d'écran n'a été trouvé!
+[End Multi-ascans.vi]
+
+[Page - A-scan.vi]
+[Array of labels]
+SOCOMATE INTERNATIONAL
+A-scan
+Commentaire
+Version document
+Page
+Fichier
+Carte
+Test
+[End Page - A-scan.vi]
+
+[Page - parameters.vi]
+[Array of labels]
+SOCOMATE INTERNATIONAL
+Version document
+Page
+Fichier
+Carte
+Test
+Emetteur
+Mode
+Amplitude
+Fréquence
+PRF
+Offset
+Diviseur de PRF
+Récepteur
+Mode
+Att. entrée
+Att. 20 dB
+Filtre
+Gain 1
+Gain 2
+DAC
+Synchro. DAC
+Position DAC
+Durée DAC
+DAC	
+Affichage
+Mode synchro.
+Type vidéo
+Mode affichage
+Retard
+Durée
+Rejet
+Zéro affichage
+Célérité Matière
+Célérité interface
+Célérité du retard
+Gate Interface
+Gate 1
+Gate 2
+Synchro.
+Mode
+Détection
+Phase
+Position
+Durée
+Niveau
+Nb avant alarme
+Seuil alarme
+Origine mesure
+Célérité
+Calibration
+Echo multiple
+Alarme Maxi.
+Alarme Mini.
+Filtre alarme
+Offset ana.
+Sortie ana.
+Rejet sup.
+Rejet inf.
+Nb.pts Couplage
+Alarme couplage
+Déviation Maxi.
+Nb. de dév.
+Moyenne
+Célérité
+Rampe d'ajustement
+[End Page - parameters.vi]
+
+[Display not match message.vi]
+Title = Avertissement
+[Array of labels]
+La phase sélectionnée n'est pas identique à l'affichage vidéo.
+Vidéo
+HF
+alternances pos.
+alternances nég.
+double alternances
+Gate IF
+Gate 1
+Gate 2
+Phase positive
+Phase négative
+Double alternances
+HF
+[Array of buttons]
+OK
+[End Display not match message.vi]
+
+[/FRENCH]
+
+[ENGLISH]
+Help_file = C:\uspc\Help\help_us.htm
+OEM_picture=C:\uspc\config\socomate.bmp
+OEM_address_picture=C:\uspc\config\socomate address.bmp
+[DLL messages]
+MSG_Alarm_Title=Alarm on board
+MSG_ALARM_BOOT=Error BOOT failed.
+MSG_ALARM_MEMORY_OVERFLOW_ERROR=Data losed.
+MSG_ALARM_EXTERNAL_TRIGGER_ERROR=External synchro. too speed.
+MSG_ALARM_POWER_ERROR=HT problem.<CR_LF>The PRF is too big.<CR_LF>Or, there is a shunt between receiver and pulser.
+MSG_ALARM_UNKNOWED=Unknowed alarm !
+MSG_CERTIFICAT_TITLE=Warning
+MSG_CERTIFICAT_1=The compliance certificate of board %d (SN %d) has been expired for %d day(s).
+MSG_CERTIFICAT_2=The compliance certificate of board %d (SN %d) expires in %d day(s).
+MSG_CERTIFICAT_3=This message will delete in 5 secondes...
+[PCXUS.vi]
+Title = USPC-3100
+[Menu_name]
+_File
+_Open
+-
+_Save
+Save _as
+-
+Duplic a channel
+-
+_Print
+-
+_Recents files
+-
+E_xit
+_Multi A-scans display
+_Display
+-
+_Configuration
+_About USPC
+[Menu_shortcut]
+O
+
+S
+
+
+
+
+P
+
+
+
+Q
+[Array of buttons]
+Pulser
+Receiver
+A-scan
+Gate IF
+Gate 1
+Gate 2
+I/O
+Frozen A.
+DAC
+Curve
+Reset
+STOP
+Board
+Test
+Dyn. correct.
+Add point
+Cursor size (%)
+not used
+not used
+TOF/WT...
+Alarm
+Misce.
+TOF/WT
+Amplitude
+[Array of labels]
+local
+remote
+DAC
+1.Amp. (%)
+(not used)
+2.Amp. (%)
+(not used)
+Mode
+Internal synchro.
+External synchro.
+Amplitude
+125 V
+250 V
+Frequency (MHz)
+Offset (µs)
+PRF (µs)
+Mode
+receive
+transmit
+Input Attenuator
+turn off
+turn on
+20 dB Attenuator
+turn off
+turn on
+Filter
+500 KHz
+1 MHz
+2.25 MHz
+5 MHz
+10 MHz
+15 MHz
+Wide band
+DAC curve
+Gain 1
+Gain 2
+OFF
+ON
+Trigger mode
+Initial pulse
+Gate 1
+Gate 2
+like Gate 1
+like Gate 2
+Video type
+HF
+half wave +
+half wave -
+full wave
+Display mode
+Max. peak
+Snapshot
+Delay (µs)
+Range (µs)
+Material velocity (m/s)
+Reject (%)
+Reject cursor
+Trigger
+Inactive
+Active
+Mode
+Positive
+Negative
+(not used)
+(not used)
+(not used)
+Wave
+Positive wave 
+Negative wave
+Full wave
+RF
+Start (µs)
+Width (µs)
+Level (%)
+Alarm filter
+Trigger
+Inactive
+Initial pulse
+Interface echo
+-
+Mode
+Positive
+Negative
+Peak amplitude
+Max. peak
+First peak
+Wave
+Positive wave 
+Negative wave
+Full wave
+RF
+Start (µs)
+Width (µs)
+Level (%)
+Alarm filter
+Trigger
+Inactive
+Initial pulse
+Interface echo
+Echo Gate 1
+Mode
+Positive
+Negative
+Peak amplitude
+Max. peak
+First peak
+Wave
+Positive wave
+Negative wave
+Full wave
+RF
+Start (µs)
+Width (µs)
+Level (%)
+Alarm filter
+Assigning panel
+Output hold time (ms)
+Max. (µs)
+Min. (µs)
+Filter
+Samples
+Nb. points
+Max. (µs)
+Max. (µs)
+Min. (µs)
+Alarm (%)
+Multi-echo
+Calibration (µs)
+Velocity (m/s)
+Offset (µs)
+Range (µs)
+Board label
+Setup files are loading...
+UT file is loading...
+Measure origin
+Level
+Zero
+Peak
+Origin offset (µs)
+N.
+Nb. of dev.
+TOF/WT mode
+TOF
+WT
+Channel label
+WARNING! Parameter %s is common for channels 1 to 8
+Analog output 0-5 V
+Analog output 0-5 V
+Analog output 0-5 V
+Analog output 0-5 V
+TTL input
+TTL input (unused)
+Open collector
+Open collector
+Open collector
+Open collector
+Open collector
+Open collector
+Ground
+Ground
+Open collector
++ 5 V
+Open collector
+Open collector
+Open collector
+Open collector
+Open collector
+TTL input
+Analog output 0-5 V
+Analog output 0-5 V
+Analog output 0-5 V
+Analog output 0-5 V
+Global Freq. (KHz)
+Like Amp.
+Filter alarm level (dB)
+External synchro. divider
+Material ()
+Interface ()
+Material
+Interface
+Velocity for Gate IF
+Velocity for Delay
+Interface velocity (m/s)
+TOF/WT Common Setting
+WT Specific process On-line
+TOF/WT Outputs
+Process limit
+Coupling
+Deviation
+Averaging
+Alarm
+Analog
+(Not used)
+Resolution
+IF.TOF (µs)
+IF.WT (µs)
+1.TOF (µs)
+1.WT (µs)
+2.TOF (µs)
+2.WT (µs)
+Slope adjust.
+dB/µs
+Start gate IF
+Board
+Channel
+Start Cycle on :
+End Cycle on : 
+Full display
+[Errors]
+[Array of titles]
+Error
+File error
+Warning
+DAC error
+Setup error
+[Array of error messages]
+-
+-
+-
+This file doesn't hold ultrasounds parameters !
+This file exist yet ! Do you want to delete it ?
+Parameters are modified. Do you want to record this modifications ?
+DAC slope is too high (highest than 10 dB/µs)
+This position exists yet !
+The dynamic research has failed.
+Impossible to load file. Do you want to retry with another file ?
+Parameters have not been saved into file!
+DAC points will be deleted !
+Serial number error or driver not found or driver accees failed.
+Read PCXUS.TXT file error.
+Read PCXUS.INI file error.
+Error in step - Reset on board %d.
+Error in step - Ascan loading on board %d.
+Error in step - Flex loading on board %d.
+Error in step - Gate loading on board %d.
+Error in step - Linearity and informations reading on board %d.
+Serial port COM%d not found or used by another application.
+MUX or RCPP board not found on serial port COM%d.
+Communication error - dialog with MUX or RCPP failed on serial port COM%d.
+Last file used (%s) not found or bad.\nPlease, select another file.
+Error\nBoard %d must be used with a RCPP or MUX extension board.
+Error\nBoard %d doesn't allowed be used with a RCPP extension board.
+Error\nBoard %d doesn't allowed be used with a RCPP or MUX extension board.
+Error\nBoard %d doesn't allowed be used with a high version of MUX extension board.
+Error\nMUX board connected to board %d is not a high version of MUX extension board.
+Error\nBoard %d has unsufficient resources to acquire Ascans.
+Error\nBoard %d must be used with a MUX extension board.
+Error. Only one USPC-3200P board is allowed to be plugged in your computer.
+Error\nBoard %d doesn't allowed be used with a DAC.
+Error. Number of boards is not sufficient (for instance: Package PCMUX3208 need two boards).
+[End PCXUS.vi]
+
+[Alarms diagnostic.vi]
+Title = Alarms diagnostic
+[Array of buttons]
+Clear
+Cancel
+[End Alarms diagnostic.vi]
+
+[DAC point.vi]
+Title = DAC points 
+[Array of buttons]
+Add
+Replace
+Erase
+Cancel
+[Array of labels]
+Gain
+Depth (µs)
+[Errors]
+[Array of titles]
+DAC error
+[Array of error messages]
+DAC slope is too high (highest than 40 dB/µs)
+This position exists yet !
+[End DAC point.vi]
+
+[Set a parameter.vi]
+[Errors]
+[Array of titles]
+Warnning !
+[Array of error messages]
+Pulser amplitude has been limited in order to protect the pulser.
+Pulser frequency has been limited in order to protect the pulser.
+PRF has been limited in order to protect the pulser.
+PRF has been limited in order to be compatible with Gate position/width and/or display.
+Range has been limited in order to be compatible with Gate position/width and/or PRF.
+Delay has been limited in order to be compatible with Gate position/width and/or PRF.
+Trigger mode has not been modified in order to be compatible with Gate position/width and/or PRF.
+Trigger mode has not been modified in order to be compatible with Gate position/width and/or PRF.
+Position has been limited in order to be compatible with Gate position/width and/or PRF.
+Width has been limited in order to be compatible with Gate position/width and/or PRF.
+Trigger mode has not been modified in order to be compatible with Gate position/width and/or PRF.
+Position has been limited in order to be compatible with Gate position/width and/or PRF.
+Width has been limited in order to be compatible with Gate position/width and/or PRF.
+Trigger mode has not been modified in order to be compatible with Gate position/width and/or PRF.
+Position has been limited in order to be compatible with Gate position/width and/or PRF.
+Width has been limited in order to be compatible with Gate position/width and/or PRF.
+Width between one or several DAC points is too small.
+Slope between one or several DAC points is too big (+/-40 dB/µs).
+-
+Filter has been limited in order to be compatible with Gate position/width and/or PRF and/or TOF/WT parameters.
+Trigger mode has not been modified in order to be compatible with Gate position/width and/or PRF.
+Position has been limited in order to be compatible with Gate position/width and/or PRF.
+Width has been limited in order to be compatible with Gate position/width and/or PRF.
+A board in slave mode only works with an external trigger.
+Peak amplitude mode has not been modified in order to be compatible with Measure origin.
+Measure origin mode has not been modified in order to be compatible with Peak amplitude.
+Peak amplitude mode has not been modified in order to be compatible with Measure origin.
+Measure origin mode has not been modified in order to be compatible with Peak amplitude.
+PRF is too fast to enable WT process.
+PRF is limited to enable WT process.
+[End Set a parameter.vi]
+
+[Pin assignment.vi]
+Title = Assigning line
+[Array of buttons]
+Stop
+[Array of labels]
+Warning !
+Changes to this option will take effect when you reload
+Pin n°
+[End Pin assignment.vi]
+
+[About.vi]
+Title = About USPC
+[Array of labels]
+DLL version
+Driver version
+Serial number
+Setup file 1
+Setup file 2
+Setup file 3
+Master/Slave mode
+Master
+Slave
+Master phased
+Slave phased
+Master link
+Resolution
+AUTO
+Low
+High
+N*1/F N=
+Hardware version
+Package
+[End About.vi]
+
+[Print.vi]
+Title = Print
+[Array of buttons]
+F1 Back
+F2 Next
+Esc Cancel
+F2 Print...
+[Array of labels]
+Destination
+Printer
+BMP
+JPEG
+PNG
+Print contents
+Ascan
+Current parameters
+All parameters
+[End Print.vi]
+
+[Print ascan.vi]
+Title = Print Ascan
+[Array of buttons]
+F2 print...
+[Array of labels]
+Comment
+[End Print ascan.vi]
+
+[Print Ascan to (bmp or jpeg or png) file.vi]
+Title = Print to (bmp or jpeg or png) file
+[Array of buttons]
+F1 Save
+Esc Cancel
+[Array of labels]
+Quality (%)
+Compression
+[Errors]
+[Array of titles]
+Error
+[Array of error messages]
+File saving failed !
+[End Print Ascan to (bmp or jpeg or png) file.vi]
+
+
+[Pins]
+[Analog output]
+1999; Ana output not used
+1000; Amplitude Gate 1
+1001; Amplitude Gate 2
+1002; Thickness Gate 1
+1003; Thickness Gate 2
+1004; Coupling Gate 1
+1005; Coupling Gate 2
+1006; Extension Gate 1
+1007; Extension Gate 2
+1008; Thickness Gate IF
+1009; Coupling Gate IF
+1010; Extension Gate IF
+[Output]
+2999; TTL output not used
+2000; Card ready
+2001; Alarm Gate IF
+2002; Alarm Gate 1
+2003; Alarm Gate 2
+2004; Alarm mini. Gate 1
+2005; Alarm mini. Gate 2
+2006; Alarm maxi. Gate 1
+2007; Alarm maxi. Gate 2
+2008; Alarm coupling Gate 1
+2009; Alarm coupling Gate 2
+2010; Alarm mini. Gate IF
+2011; Alarm maxi. Gate IF
+2012; Alarm coupling Gate IF
+[Input]
+3000; TTL input not used
+[No reallocable]
+4000; Ground
+4001; +5 V
+4002; Output synchro.
+4003; External synchro.
+4004; Start out
+4005; Start in
+4006; PRF link
+[End pins]
+
+[Multi-ascans Configuration window.vi]
+Title = Multi-ascans Configuration window
+[Array of labels]
+Name
+File
+Ascans #
+(board:channel) list
+[Array of buttons]
+New/Modif.
+Delete
+OK
+Cancel
+[End Multi-ascans Configuration window.vi]
+
+[Multi-ascans New or Modified screen.vi]
+Title = Multi-ascans New or Modified screen
+[Array of labels]
+Name
+Ascan
+Board
+Channel
+[Array of buttons]
+OK
+Cancel
+[End Multi-ascans New or Modified screen.vi]
+
+[Multi-ascans.vi]
+Title = Multi-ascans
+[Array of labels]
+Display mode :
+undefined
+[Array of buttons]
+STOP
+[Errors]
+[Array of titles]
+Error
+[Array of error messages]
+Any screen file configuration founded!
+[End Multi-ascans.vi]
+
+[Page - A-scan.vi]
+[Array of labels]
+SOCOMATE INTERNATIONAL
+A-scan
+Comment
+Document version
+Page
+File
+Board
+Test
+[End Page - A-scan.vi]
+
+[Page - parameters.vi]
+[Array of labels]
+SOCOMATE INTERNATIONAL
+Document version
+Page
+File
+Board
+Test
+Pulser
+Mode
+Amplitude
+Frequency
+PRF
+Offset
+External synchro. divider
+Receiver
+Mode
+Input attenuator
+20 dB attenuator
+Filter
+Gain 1
+Gain 2
+DAC
+DAC Trigger
+DAC Position
+DAC Width
+DAC	
+Scope
+Trigger
+Video type
+Display mode
+Delay
+Width
+Reject
+Zero scope
+Material velocity
+Interface velocity
+Velocity for delay
+Gate Interface
+Gate 1
+Gate 2
+Trigger
+Mode
+Peak amplitude
+Wave
+Start
+Width
+Level
+Alarm filter
+Alarm filter level
+Measure origin
+Velocity
+Calibration
+Multiple-echo
+Max. alarm
+Min. alarm
+Filter alarm
+Ana. offset
+Ana. output range
+Sup. reject
+Inf. reject
+Coupling samples
+Coupling alarm
+Max. deviation
+Nb. of dev.
+Averaging
+Velocity
+Slope adjusting
+[End Page - parameters.vi]
+
+[Display not match message.vi]
+Title = Warning
+[Array of labels]
+Selected wave does not match with video
+Video
+HF
+half wave +
+half wave -
+full wave
+Gate IF
+Gate 1
+Gate 2
+half wave +
+half wave -
+full wave
+RF
+[Array of buttons]
+OK
+[End Display not match message.vi]
+
+[/ENGLISH]
+
+
